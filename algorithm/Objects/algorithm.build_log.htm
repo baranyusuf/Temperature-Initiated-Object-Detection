@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Pelin Morkoç, Middle East Technical University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.41.0.0
+Toolchain Path:  C:\Users\Davut CALI\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Davut CALI\Desktop\alg\algorithm\algorithm.uvprojx
+Project File Date:  01/14/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\Davut CALI\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+assembling OutStr.s...
+compiling main.c...
+armclang: warning: argument unused during compilation: '-D __UVISION_VERSION=541' [-Wunused-command-line-argument]
+"DELAY200.asm", line 15: Warning: A1581W: Added 2 bytes of padding at address 0xa
+   15 0000000c  END                                       ; End of the assembly file
+0 Errors, 1 Warning
+assembling DELAY200.asm...
+"GPIO_B_INITIALIZE.s", line 77: Warning: A1447W: Missing END directive at end of file, but found a label named END
+   77 0000005e 
+"GPIO_B_INITIALIZE.s", line 77: Warning: A1581W: Added 2 bytes of padding at address 0x5e
+   77 00000060 
+0 Errors, 2 Warnings
+assembling GPIO_B_INITIALIZE.s...
+algorithm.c(361): warning: equality comparison result unused [-Wunused-comparison]
+  361 |                         button_case == 0;
+      |                         ~~~~~~~~~~~~^~~~
+algorithm.c(361): note: use '=' to turn this equality comparison into an assignment
+  361 |                         button_case == 0;
+      |                                     ^~
+      |                                     =
+algorithm.c(742): warning: passing 'uint32_t *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  742 |                                                         GetPixelCoordinates(last_angle, distance, &x, &y);
+      |                                                                                                   ^~
+.\algorithm.h(98): note: passing argument to parameter 'x' here
+   98 | int GetPixelCoordinates(float angle, float distance, int *x, int *y);
+      |                                                           ^
+algorithm.c(742): warning: passing 'uint32_t *' (aka 'unsigned int *') to parameter of type 'int *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  742 |                                                         GetPixelCoordinates(last_angle, distance, &x, &y);
+      |                                                                                                       ^~
+.\algorithm.h(98): note: passing argument to parameter 'y' here
+   98 | int GetPixelCoordinates(float angle, float distance, int *x, int *y);
+      |                                                                   ^
+algorithm.c(1033): warning: array index 1000 is past the end of the array (that has type 'float[1000]') [-Warray-bounds]
+ 1033 |                 return buffer_distance[1000];
+      |                        ^               ~~~~
+algorithm.c(55): note: array 'buffer_distance' declared here
+   55 | float buffer_distance[1000];
+      | ^
+algorithm.c(1046): warning: unused parameter 'angle' [-Wunused-parameter]
+ 1046 | int GetPixelCoordinates(float angle, float distance, int *x, int *y) {
+      |                               ^
+algorithm.c(1496): warning: unused parameter 'i' [-Wunused-parameter]
+ 1496 | void Nokia5110_SetPxl(uint32_t i, uint32_t j){
+      |                                ^
+algorithm.c(1496): warning: unused parameter 'j' [-Wunused-parameter]
+ 1496 | void Nokia5110_SetPxl(uint32_t i, uint32_t j){
+      |                                            ^
+7 warnings generated.
+compiling algorithm.c...
+"keypad.s", line 164: Warning: A1447W: Missing END directive at end of file, but found a label named END
+  164 00000148 
+0 Errors, 1 Warning
+assembling keypad.s...
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=16252 RO-data=1500 RW-data=536 ZI-data=4744  
+".\Objects\algorithm.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Davut CALI/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Davut CALI/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

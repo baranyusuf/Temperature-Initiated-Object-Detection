@@ -1,0 +1,1858 @@
+Component: Arm Compiler for Embedded 6.22 Tool: armlink [5ee90200]
+
+==============================================================================
+
+Section Cross References
+
+    algorithm.o(.text.pulse_init) refers to algorithm.o(.data.LOW) for LOW
+    algorithm.o(.ARM.exidx.text.pulse_init) refers to algorithm.o(.text.pulse_init) for [Anonymous Symbol]
+    algorithm.o(.text.TIMER2B_Handler) refers to algorithm.o(.bss.run_time) for run_time
+    algorithm.o(.text.TIMER2B_Handler) refers to algorithm.o(.data.LOW) for LOW
+    algorithm.o(.text.TIMER2B_Handler) refers to algorithm.o(.data.HIGH) for HIGH
+    algorithm.o(.text.TIMER2B_Handler) refers to algorithm.o(.bss.TIMER2B_Handler.state) for TIMER2B_Handler.state
+    algorithm.o(.ARM.exidx.text.TIMER2B_Handler) refers to algorithm.o(.text.TIMER2B_Handler) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.I2C_busy) refers to algorithm.o(.text.I2C_busy) for [Anonymous Symbol]
+    algorithm.o(.text.I2C3_Write_Multiple) refers to algorithm.o(.text.I2C_busy) for I2C_busy
+    algorithm.o(.ARM.exidx.text.I2C3_Write_Multiple) refers to algorithm.o(.text.I2C3_Write_Multiple) for [Anonymous Symbol]
+    algorithm.o(.text.I2C3_Read_Multiple) refers to algorithm.o(.text.I2C_busy) for I2C_busy
+    algorithm.o(.ARM.exidx.text.I2C3_Read_Multiple) refers to algorithm.o(.text.I2C3_Read_Multiple) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.I2C3_Init) refers to algorithm.o(.text.I2C3_Init) for [Anonymous Symbol]
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.text.I2C3_Write_Multiple) for I2C3_Write_Multiple
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.text.I2C3_Read_Multiple) for I2C3_Read_Multiple
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.val3) for val3
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.temporary_2) for temporary_2
+    algorithm.o(.text.Read_IC) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
+    algorithm.o(.text.Read_IC) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    algorithm.o(.text.Read_IC) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    algorithm.o(.text.Read_IC) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.var1) for var1
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.var2) for var2
+    algorithm.o(.text.Read_IC) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.temporary) for temporary
+    algorithm.o(.text.Read_IC) refers to algorithm.o(.bss.Tempreture) for Tempreture
+    algorithm.o(.text.Read_IC) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    algorithm.o(.text.Read_IC) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
+    algorithm.o(.ARM.exidx.text.Read_IC) refers to algorithm.o(.text.Read_IC) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.GPIO_Init_for_Analog_Comparator) refers to algorithm.o(.text.GPIO_Init_for_Analog_Comparator) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.DeepSleep_Init) refers to algorithm.o(.text.DeepSleep_Init) for [Anonymous Symbol]
+    algorithm.o(.text.AnalogComparator_Init) refers to algorithm.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    algorithm.o(.text.AnalogComparator_Init) refers to algorithm.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    algorithm.o(.ARM.exidx.text.AnalogComparator_Init) refers to algorithm.o(.text.AnalogComparator_Init) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to algorithm.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.__NVIC_SetPriority) refers to algorithm.o(.text.__NVIC_SetPriority) for [Anonymous Symbol]
+    algorithm.o(.text.GPIOB_Interrupt_Init) refers to algorithm.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    algorithm.o(.text.GPIOB_Interrupt_Init) refers to algorithm.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    algorithm.o(.ARM.exidx.text.GPIOB_Interrupt_Init) refers to algorithm.o(.text.GPIOB_Interrupt_Init) for [Anonymous Symbol]
+    algorithm.o(.text.COMP0_Handler) refers to algorithm.o(.bss.button_case) for button_case
+    algorithm.o(.text.COMP0_Handler) refers to algorithm.o(.data.count_case) for count_case
+    algorithm.o(.text.COMP0_Handler) refers to algorithm.o(.text.Set_PC2_High) for Set_PC2_High
+    algorithm.o(.ARM.exidx.text.COMP0_Handler) refers to algorithm.o(.text.COMP0_Handler) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.Set_PC2_High) refers to algorithm.o(.text.Set_PC2_High) for [Anonymous Symbol]
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.text.delay_ms) for delay_ms
+    algorithm.o(.text.GPIOB_Handler) refers to keypad.o(main_area) for keypad
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.data.ADDR_1) for ADDR_1
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.data.ADDR_2) for ADDR_2
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.data.ADDR_3) for ADDR_3
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.bss.value_1) for value_1
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.bss.value_2) for value_2
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.bss.value_3) for value_3
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.data.result_threshold) for result_threshold
+    algorithm.o(.text.GPIOB_Handler) refers to algorithm.o(.bss.read_button) for read_button
+    algorithm.o(.ARM.exidx.text.GPIOB_Handler) refers to algorithm.o(.text.GPIOB_Handler) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.delay_ms) refers to algorithm.o(.text.delay_ms) for [Anonymous Symbol]
+    algorithm.o(.text.Button_Init) refers to algorithm.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    algorithm.o(.text.Button_Init) refers to algorithm.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    algorithm.o(.ARM.exidx.text.Button_Init) refers to algorithm.o(.text.Button_Init) for [Anonymous Symbol]
+    algorithm.o(.text.GPIOF_Handler) refers to algorithm.o(.data.count_case) for count_case
+    algorithm.o(.text.GPIOF_Handler) refers to algorithm.o(.text.Set_PC2_Low) for Set_PC2_Low
+    algorithm.o(.text.GPIOF_Handler) refers to algorithm.o(.text.Turn_Off) for Turn_Off
+    algorithm.o(.ARM.exidx.text.GPIOF_Handler) refers to algorithm.o(.text.GPIOF_Handler) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.Set_PC2_Low) refers to algorithm.o(.text.Set_PC2_Low) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.Turn_Off) refers to algorithm.o(.text.Turn_Off) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.LED_Init) refers to algorithm.o(.text.LED_Init) for [Anonymous Symbol]
+    algorithm.o(.text.Set_LED_Color) refers to algorithm.o(.bss.distance) for distance
+    algorithm.o(.ARM.exidx.text.Set_LED_Color) refers to algorithm.o(.text.Set_LED_Color) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.PortC_Init) refers to algorithm.o(.text.PortC_Init) for [Anonymous Symbol]
+    algorithm.o(.text.SysTick_Init) refers to algorithm.o(.data.count_case) for count_case
+    algorithm.o(.text.SysTick_Init) refers to algorithm.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    algorithm.o(.text.SysTick_Init) refers to algorithm.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    algorithm.o(.ARM.exidx.text.SysTick_Init) refers to algorithm.o(.text.SysTick_Init) for [Anonymous Symbol]
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.take_ADC_value) for take_ADC_value
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.calculate_threshold_PE4) for calculate_threshold_PE4
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.sensor_count) for sensor_count
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.alg_motor_sensor) for alg_motor_sensor
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.data.count_case) for count_case
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_OutUDec) for Nokia5110_OutUDec
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.read_button) for read_button
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.data.result_threshold) for result_threshold
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.stepCount) for stepCount
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.data.step) for step
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.setStep) for setStep
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.angle) for angle
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.SysTick_Init) for SysTick_Init
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.delay_ms) for delay_ms
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.button_case) for button_case
+    algorithm.o(.text.SysTick_Handler) refers to main.o(.bss.avg_sum) for avg_sum
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Motor_Handler) for Motor_Handler
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_Clear) for Nokia5110_Clear
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.distance) for distance
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.rodata.str1.1) for .L.str
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_OutString) for Nokia5110_OutString
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.last_angle) for last_angle
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.data.cartesian) for cartesian
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.x) for x
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.bss.y) for y
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.GetPixelCoordinates) for GetPixelCoordinates
+    algorithm.o(.text.SysTick_Handler) refers to algorithm.o(.text.Nokia5110_SetPxl) for Nokia5110_SetPxl
+    algorithm.o(.ARM.exidx.text.SysTick_Handler) refers to algorithm.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    algorithm.o(.text.take_ADC_value) refers to algorithm.o(.text.ADC_Read) for ADC_Read
+    algorithm.o(.text.take_ADC_value) refers to algorithm.o(.bss.adcValue) for adcValue
+    algorithm.o(.text.take_ADC_value) refers to algorithm.o(.bss.voltage) for voltage
+    algorithm.o(.ARM.exidx.text.take_ADC_value) refers to algorithm.o(.text.take_ADC_value) for [Anonymous Symbol]
+    algorithm.o(.text.calculate_threshold_PE4) refers to algorithm.o(.text.ADC_Read_PE4) for ADC_Read_PE4
+    algorithm.o(.text.calculate_threshold_PE4) refers to algorithm.o(.bss.adcValue_th) for adcValue_th
+    algorithm.o(.text.calculate_threshold_PE4) refers to algorithm.o(.bss.voltage_th) for voltage_th
+    algorithm.o(.ARM.exidx.text.calculate_threshold_PE4) refers to algorithm.o(.text.calculate_threshold_PE4) for [Anonymous Symbol]
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.text.send_trigger_pulse) for send_trigger_pulse
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.text.delay_ms) for delay_ms
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.pulse_Width_motor) for pulse_Width_motor
+    algorithm.o(.text.alg_motor_sensor) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    algorithm.o(.text.alg_motor_sensor) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    algorithm.o(.text.alg_motor_sensor) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    algorithm.o(.text.alg_motor_sensor) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.distance) for distance
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.distance_count) for distance_count
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.buffer_distance) for buffer_distance
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.angle) for angle
+    algorithm.o(.text.alg_motor_sensor) refers to algorithm.o(.bss.last_angle) for last_angle
+    algorithm.o(.ARM.exidx.text.alg_motor_sensor) refers to algorithm.o(.text.alg_motor_sensor) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_SetCursor) refers to algorithm.o(.text.lcdwrite) for lcdwrite
+    algorithm.o(.ARM.exidx.text.Nokia5110_SetCursor) refers to algorithm.o(.text.Nokia5110_SetCursor) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_OutUDec) refers to algorithm.o(.text.Nokia5110_OutChar) for Nokia5110_OutChar
+    algorithm.o(.ARM.exidx.text.Nokia5110_OutUDec) refers to algorithm.o(.text.Nokia5110_OutUDec) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.setStep) refers to algorithm.o(.text.setStep) for [Anonymous Symbol]
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.bss.stepCount) for stepCount
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.data.step) for step
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.text.setStep) for setStep
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.bss.angle) for angle
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.data.count_case) for count_case
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.bss.distance_count) for distance_count
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.bss.buffer_distance) for buffer_distance
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.bss.distance) for distance
+    algorithm.o(.text.Motor_Handler) refers to algorithm.o(.text.SysTick_Init) for SysTick_Init
+    algorithm.o(.ARM.exidx.text.Motor_Handler) refers to algorithm.o(.text.Motor_Handler) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_Clear) refers to algorithm.o(.text.lcddatawrite) for lcddatawrite
+    algorithm.o(.text.Nokia5110_Clear) refers to algorithm.o(.text.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    algorithm.o(.ARM.exidx.text.Nokia5110_Clear) refers to algorithm.o(.text.Nokia5110_Clear) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_OutString) refers to algorithm.o(.text.Nokia5110_OutChar) for Nokia5110_OutChar
+    algorithm.o(.ARM.exidx.text.Nokia5110_OutString) refers to algorithm.o(.text.Nokia5110_OutString) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_DrawFullImage) refers to algorithm.o(.text.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    algorithm.o(.text.Nokia5110_DrawFullImage) refers to algorithm.o(.text.lcddatawrite) for lcddatawrite
+    algorithm.o(.ARM.exidx.text.Nokia5110_DrawFullImage) refers to algorithm.o(.text.Nokia5110_DrawFullImage) for [Anonymous Symbol]
+    algorithm.o(.text.GetPixelCoordinates) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    algorithm.o(.text.GetPixelCoordinates) refers to algorithm.o(.bss.last_angle) for last_angle
+    algorithm.o(.text.GetPixelCoordinates) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    algorithm.o(.text.GetPixelCoordinates) refers to cos.o(i.__hardfp_cos) for __hardfp_cos
+    algorithm.o(.text.GetPixelCoordinates) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    algorithm.o(.text.GetPixelCoordinates) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
+    algorithm.o(.text.GetPixelCoordinates) refers to sin.o(i.__hardfp_sin) for __hardfp_sin
+    algorithm.o(.text.GetPixelCoordinates) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    algorithm.o(.ARM.exidx.text.GetPixelCoordinates) refers to algorithm.o(.text.GetPixelCoordinates) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_SetPxl) refers to algorithm.o(.bss.y) for y
+    algorithm.o(.text.Nokia5110_SetPxl) refers to algorithm.o(.bss.x) for x
+    algorithm.o(.text.Nokia5110_SetPxl) refers to algorithm.o(.data.cartesian) for cartesian
+    algorithm.o(.text.Nokia5110_SetPxl) refers to algorithm.o(.text.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    algorithm.o(.ARM.exidx.text.Nokia5110_SetPxl) refers to algorithm.o(.text.Nokia5110_SetPxl) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.ADC_Init) refers to algorithm.o(.text.ADC_Init) for [Anonymous Symbol]
+    algorithm.o(.text.ADC_Read) refers to algorithm.o(.bss.result) for result
+    algorithm.o(.ARM.exidx.text.ADC_Read) refers to algorithm.o(.text.ADC_Read) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.ADC_Init_PE4) refers to algorithm.o(.text.ADC_Init_PE4) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.ADC_Read_PE4) refers to algorithm.o(.text.ADC_Read_PE4) for [Anonymous Symbol]
+    algorithm.o(.text.format_distance) refers to algorithm.o(.rodata.str1.1) for .L.str.4
+    algorithm.o(.text.format_distance) refers to snprintf.o(.text) for snprintf
+    algorithm.o(.ARM.exidx.text.format_distance) refers to algorithm.o(.text.format_distance) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.PortE_Init) refers to algorithm.o(.text.PortE_Init) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.TRIG_Init) refers to algorithm.o(.text.TRIG_Init) for [Anonymous Symbol]
+    algorithm.o(.text.TIMER2_Init) refers to algorithm.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    algorithm.o(.text.TIMER2_Init) refers to algorithm.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    algorithm.o(.ARM.exidx.text.TIMER2_Init) refers to algorithm.o(.text.TIMER2_Init) for [Anonymous Symbol]
+    algorithm.o(.text.send_trigger_pulse) refers to algorithm.o(.text.delay_ms) for delay_ms
+    algorithm.o(.ARM.exidx.text.send_trigger_pulse) refers to algorithm.o(.text.send_trigger_pulse) for [Anonymous Symbol]
+    algorithm.o(.text.TIMER2A_Handler) refers to algorithm.o(.bss.risingEdge) for risingEdge
+    algorithm.o(.text.TIMER2A_Handler) refers to algorithm.o(.bss.fallingEdge) for fallingEdge
+    algorithm.o(.text.TIMER2A_Handler) refers to algorithm.o(.bss.pulse_Width_motor) for pulse_Width_motor
+    algorithm.o(.ARM.exidx.text.TIMER2A_Handler) refers to algorithm.o(.text.TIMER2A_Handler) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_Init) refers to algorithm.o(.text.lcdwrite) for lcdwrite
+    algorithm.o(.ARM.exidx.text.Nokia5110_Init) refers to algorithm.o(.text.Nokia5110_Init) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.lcdwrite) refers to algorithm.o(.text.lcdwrite) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_OutChar) refers to algorithm.o(.text.lcddatawrite) for lcddatawrite
+    algorithm.o(.text.Nokia5110_OutChar) refers to algorithm.o(.rodata.ASCII) for ASCII
+    algorithm.o(.ARM.exidx.text.Nokia5110_OutChar) refers to algorithm.o(.text.Nokia5110_OutChar) for [Anonymous Symbol]
+    algorithm.o(.ARM.exidx.text.lcddatawrite) refers to algorithm.o(.text.lcddatawrite) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_PrintBMP) refers to algorithm.o(.bss.Screen) for Screen
+    algorithm.o(.ARM.exidx.text.Nokia5110_PrintBMP) refers to algorithm.o(.text.Nokia5110_PrintBMP) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_ClearBuffer) refers to algorithm.o(.bss.Screen) for Screen
+    algorithm.o(.ARM.exidx.text.Nokia5110_ClearBuffer) refers to algorithm.o(.text.Nokia5110_ClearBuffer) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_DisplayBuffer) refers to algorithm.o(.bss.Screen) for Screen
+    algorithm.o(.text.Nokia5110_DisplayBuffer) refers to algorithm.o(.text.Nokia5110_DrawFullImage) for Nokia5110_DrawFullImage
+    algorithm.o(.ARM.exidx.text.Nokia5110_DisplayBuffer) refers to algorithm.o(.text.Nokia5110_DisplayBuffer) for [Anonymous Symbol]
+    algorithm.o(.text.Nokia5110_ClrPxl) refers to algorithm.o(.rodata.Masks) for Masks
+    algorithm.o(.text.Nokia5110_ClrPxl) refers to algorithm.o(.bss.Screen) for Screen
+    algorithm.o(.ARM.exidx.text.Nokia5110_ClrPxl) refers to algorithm.o(.text.Nokia5110_ClrPxl) for [Anonymous Symbol]
+    main.o(.text.main) refers to gpio_b_initialize.o(main_area) for GPIO_B_INITIALIZE
+    main.o(.text.main) refers to algorithm.o(.text.Button_Init) for Button_Init
+    main.o(.text.main) refers to algorithm.o(.text.DeepSleep_Init) for DeepSleep_Init
+    main.o(.text.main) refers to algorithm.o(.text.GPIOB_Interrupt_Init) for GPIOB_Interrupt_Init
+    main.o(.text.main) refers to algorithm.o(.text.GPIO_Init_for_Analog_Comparator) for GPIO_Init_for_Analog_Comparator
+    main.o(.text.main) refers to algorithm.o(.text.AnalogComparator_Init) for AnalogComparator_Init
+    main.o(.text.main) refers to algorithm.o(.text.LED_Init) for LED_Init
+    main.o(.text.main) refers to algorithm.o(.text.ADC_Init) for ADC_Init
+    main.o(.text.main) refers to algorithm.o(.text.ADC_Init_PE4) for ADC_Init_PE4
+    main.o(.text.main) refers to algorithm.o(.text.PortC_Init) for PortC_Init
+    main.o(.text.main) refers to algorithm.o(.text.PortE_Init) for PortE_Init
+    main.o(.text.main) refers to algorithm.o(.text.SysTick_Init) for SysTick_Init
+    main.o(.text.main) refers to algorithm.o(.text.I2C3_Init) for I2C3_Init
+    main.o(.text.main) refers to algorithm.o(.data.LOW) for LOW
+    main.o(.text.main) refers to algorithm.o(.data.HIGH) for HIGH
+    main.o(.text.main) refers to algorithm.o(.text.Nokia5110_Init) for Nokia5110_Init
+    main.o(.text.main) refers to algorithm.o(.text.Nokia5110_Clear) for Nokia5110_Clear
+    main.o(.text.main) refers to algorithm.o(.text.Nokia5110_OutChar) for Nokia5110_OutChar
+    main.o(.text.main) refers to algorithm.o(.data.count_case) for count_case
+    main.o(.text.main) refers to algorithm.o(.text.Read_IC) for Read_IC
+    main.o(.text.main) refers to main.o(.bss.sensor_sum) for sensor_sum
+    main.o(.text.main) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    main.o(.text.main) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    main.o(.text.main) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
+    main.o(.text.main) refers to main.o(.bss.avg_sum) for avg_sum
+    main.o(.text.main) refers to algorithm.o(.text.pulse_init) for pulse_init
+    main.o(.text.main) refers to algorithm.o(.bss.run_time) for run_time
+    main.o(.text.main) refers to algorithm.o(.data.result_threshold) for result_threshold
+    main.o(.text.main) refers to algorithm.o(.text.delay_ms) for delay_ms
+    main.o(.text.main) refers to algorithm.o(.text.Set_PC2_Low) for Set_PC2_Low
+    main.o(.text.main) refers to algorithm.o(.text.TRIG_Init) for TRIG_Init
+    main.o(.text.main) refers to algorithm.o(.text.TIMER2_Init) for TIMER2_Init
+    main.o(.text.main) refers to algorithm.o(.bss.distance) for distance
+    main.o(.text.main) refers to algorithm.o(.text.Set_LED_Color) for Set_LED_Color
+    main.o(.text.main) refers to algorithm.o(.text.Turn_Off) for Turn_Off
+    main.o(.text.main) refers to algorithm.o(.bss.stepCount) for stepCount
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    startup_tm4c123.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(STACK) for __initial_sp
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(.text) for Reset_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.GPIOB_Handler) for GPIOB_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.TIMER2A_Handler) for TIMER2A_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.TIMER2B_Handler) for TIMER2B_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.COMP0_Handler) for COMP0_Handler
+    startup_tm4c123.o(RESET) refers to algorithm.o(.text.GPIOF_Handler) for GPIOF_Handler
+    startup_tm4c123.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(.text) refers to system_tm4c123.o(.text.SystemInit) for SystemInit
+    startup_tm4c123.o(.text) refers to __main.o(!!!main) for __main
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(HEAP) for Heap_Mem
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(STACK) for Stack_Mem
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.getOscClk) for getOscClk
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.data.SystemCoreClock) for SystemCoreClock
+    system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.getOscClk) refers to system_tm4c123.o(.text.getOscClk) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.SystemInit) refers to system_tm4c123.o(.text.SystemInit) for [Anonymous Symbol]
+    snprintf.o(.text) refers (Special) to _printf_a.o(.ARM.Collect$$_printf_percent$$00000006) for _printf_a
+    snprintf.o(.text) refers (Special) to _printf_c.o(.ARM.Collect$$_printf_percent$$00000013) for _printf_c
+    snprintf.o(.text) refers (Special) to _printf_charcount.o(.text) for _printf_charcount
+    snprintf.o(.text) refers (Special) to _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) for _printf_d
+    snprintf.o(.text) refers (Special) to _printf_e.o(.ARM.Collect$$_printf_percent$$00000004) for _printf_e
+    snprintf.o(.text) refers (Special) to _printf_f.o(.ARM.Collect$$_printf_percent$$00000003) for _printf_f
+    snprintf.o(.text) refers (Special) to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    snprintf.o(.text) refers (Special) to printf2.o(x$fpl$printf2) for _printf_fp_hex
+    snprintf.o(.text) refers (Special) to _printf_g.o(.ARM.Collect$$_printf_percent$$00000005) for _printf_g
+    snprintf.o(.text) refers (Special) to _printf_i.o(.ARM.Collect$$_printf_percent$$00000008) for _printf_i
+    snprintf.o(.text) refers (Special) to _printf_dec.o(.text) for _printf_int_dec
+    snprintf.o(.text) refers (Special) to _printf_l.o(.ARM.Collect$$_printf_percent$$00000012) for _printf_l
+    snprintf.o(.text) refers (Special) to _printf_lc.o(.ARM.Collect$$_printf_percent$$00000015) for _printf_lc
+    snprintf.o(.text) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    snprintf.o(.text) refers (Special) to _printf_lld.o(.ARM.Collect$$_printf_percent$$0000000E) for _printf_lld
+    snprintf.o(.text) refers (Special) to _printf_lli.o(.ARM.Collect$$_printf_percent$$0000000D) for _printf_lli
+    snprintf.o(.text) refers (Special) to _printf_llo.o(.ARM.Collect$$_printf_percent$$00000010) for _printf_llo
+    snprintf.o(.text) refers (Special) to _printf_llu.o(.ARM.Collect$$_printf_percent$$0000000F) for _printf_llu
+    snprintf.o(.text) refers (Special) to _printf_llx.o(.ARM.Collect$$_printf_percent$$00000011) for _printf_llx
+    snprintf.o(.text) refers (Special) to _printf_longlong_dec.o(.text) for _printf_longlong_dec
+    snprintf.o(.text) refers (Special) to _printf_hex_int_ll_ptr.o(.text) for _printf_longlong_hex
+    snprintf.o(.text) refers (Special) to _printf_oct_int_ll.o(.text) for _printf_longlong_oct
+    snprintf.o(.text) refers (Special) to _printf_ls.o(.ARM.Collect$$_printf_percent$$00000016) for _printf_ls
+    snprintf.o(.text) refers (Special) to _printf_n.o(.ARM.Collect$$_printf_percent$$00000001) for _printf_n
+    snprintf.o(.text) refers (Special) to _printf_o.o(.ARM.Collect$$_printf_percent$$0000000B) for _printf_o
+    snprintf.o(.text) refers (Special) to _printf_p.o(.ARM.Collect$$_printf_percent$$00000002) for _printf_p
+    snprintf.o(.text) refers (Special) to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    snprintf.o(.text) refers (Special) to _printf_pad.o(.text) for _printf_post_padding
+    snprintf.o(.text) refers (Special) to _printf_s.o(.ARM.Collect$$_printf_percent$$00000014) for _printf_s
+    snprintf.o(.text) refers (Special) to _printf_str.o(.text) for _printf_str
+    snprintf.o(.text) refers (Special) to _printf_truncate.o(.text) for _printf_truncate_signed
+    snprintf.o(.text) refers (Special) to _printf_u.o(.ARM.Collect$$_printf_percent$$0000000A) for _printf_u
+    snprintf.o(.text) refers (Special) to _printf_wctomb.o(.text) for _printf_wctomb
+    snprintf.o(.text) refers (Special) to _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C) for _printf_x
+    snprintf.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
+    snprintf.o(.text) refers to _snputc.o(.text) for _snputc
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    d2f.o(x$fpl$d2f) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    d2f.o(x$fpl$d2f) refers to fretinf.o(x$fpl$fretinf) for __fpl_fretinf
+    d2f.o(x$fpl$d2f) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    daddsub_clz.o(x$fpl$dadd) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dadd) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dadd) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    daddsub_clz.o(x$fpl$dadd) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    daddsub_clz.o(x$fpl$drsb) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dsub) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dsub) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$dsub) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    ddiv.o(x$fpl$drdiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$drdiv) refers to ddiv.o(x$fpl$ddiv) for ddiv_entry
+    ddiv.o(x$fpl$ddiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$ddiv) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    ddiv.o(x$fpl$ddiv) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfix.o(x$fpl$dfix) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfix.o(x$fpl$dfix) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfix.o(x$fpl$dfixr) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfix.o(x$fpl$dfixr) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dflt_clz.o(x$fpl$dfltu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dflt) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dfltn) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    dmul.o(x$fpl$dmul) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    f2d.o(x$fpl$f2d) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    f2d.o(x$fpl$f2d) refers to fnaninf.o(x$fpl$fnaninf) for __fpl_fnaninf
+    f2d.o(x$fpl$f2d) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    cos.o(i.__hardfp_cos) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    cos.o(i.__hardfp_cos) refers to _rserrno.o(.text) for __set_errno
+    cos.o(i.__hardfp_cos) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    cos.o(i.__hardfp_cos) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos.o(i.__hardfp_cos) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos.o(i.__hardfp_cos) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos.o(i.__hardfp_cos) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    cos.o(i.__hardfp_cos) refers to basic.o(x$fpl$basic) for __aeabi_dneg
+    cos.o(i.__softfp_cos) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    cos.o(i.__softfp_cos) refers to cos.o(i.__hardfp_cos) for __hardfp_cos
+    cos.o(i.cos) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    cos.o(i.cos) refers to cos.o(i.__hardfp_cos) for __hardfp_cos
+    sin.o(i.__hardfp_sin) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sin.o(i.__hardfp_sin) refers to _rserrno.o(.text) for __set_errno
+    sin.o(i.__hardfp_sin) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    sin.o(i.__hardfp_sin) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin.o(i.__hardfp_sin) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin.o(i.__hardfp_sin) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin.o(i.__hardfp_sin) refers to basic.o(x$fpl$basic) for __aeabi_dneg
+    sin.o(i.__hardfp_sin) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    sin.o(i.__softfp_sin) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sin.o(i.__softfp_sin) refers to sin.o(i.__hardfp_sin) for __hardfp_sin
+    sin.o(i.sin) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sin.o(i.sin) refers to sin.o(i.__hardfp_sin) for __hardfp_sin
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    _rserrno.o(.text) refers to rt_errno_addr_intlibspace.o(.text) for __aeabi_errno_addr
+    __printf.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    _printf_str.o(.text) refers (Special) to _printf_char.o(.text) for _printf_cs_common
+    _printf_str.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_str.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_dec.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_signed
+    _printf_dec.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_dec.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_char_common.o(.text) refers to __printf_flags_ss_wp.o(.text) for __printf
+    _printf_wctomb.o(.text) refers (Special) to _printf_wchar.o(.text) for _printf_lcs_common
+    _printf_wctomb.o(.text) refers to _c16rtomb.o(.text) for _wcrtomb
+    _printf_wctomb.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_wctomb.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_wctomb.o(.text) refers to _printf_wctomb.o(.constdata) for .constdata
+    _printf_wctomb.o(.constdata) refers (Special) to _printf_wchar.o(.text) for _printf_lcs_common
+    _printf_longlong_dec.o(.text) refers to lludiv10.o(.text) for _ll_udiv10
+    _printf_longlong_dec.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_oct_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_oct_int.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_oct_int.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_oct_int_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_oct_int_ll.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_hex_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ll.o(.text) refers to _printf_hex_ll.o(.constdata) for .constdata
+    _printf_hex_int.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_hex_int.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int.o(.text) refers to _printf_hex_int.o(.constdata) for .constdata
+    _printf_hex_int_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ll.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_hex_int_ll.o(.text) refers to _printf_hex_int_ll.o(.constdata) for .constdata
+    _printf_hex_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ptr.o(.text) refers to _printf_hex_ptr.o(.constdata) for .constdata
+    _printf_hex_int_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ptr.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_hex_int_ptr.o(.text) refers to _printf_hex_int_ptr.o(.constdata) for .constdata
+    _printf_hex_ll_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ll_ptr.o(.text) refers to _printf_hex_ll_ptr.o(.constdata) for .constdata
+    _printf_hex_int_ll_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ll_ptr.o(.text) refers (Weak) to _printf_truncate.o(.text) for _printf_truncate_unsigned
+    _printf_hex_int_ll_ptr.o(.text) refers to _printf_hex_int_ll_ptr.o(.constdata) for .constdata
+    __printf_flags.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags.o(.text) refers to __printf_flags.o(.constdata) for .constdata
+    __printf_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to __printf_flags_ss.o(.constdata) for .constdata
+    __printf_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_flags_wp.o(.constdata) for .constdata
+    __printf_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_flags_ss_wp.o(.constdata) for .constdata
+    _printf_c.o(.ARM.Collect$$_printf_percent$$00000013) refers (Weak) to _printf_char.o(.text) for _printf_char
+    _printf_s.o(.ARM.Collect$$_printf_percent$$00000014) refers (Weak) to _printf_char.o(.text) for _printf_string
+    _printf_n.o(.ARM.Collect$$_printf_percent$$00000001) refers (Weak) to _printf_charcount.o(.text) for _printf_charcount
+    _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C) refers (Weak) to _printf_hex_int_ll_ptr.o(.text) for _printf_int_hex
+    _printf_p.o(.ARM.Collect$$_printf_percent$$00000002) refers (Weak) to _printf_hex_int_ll_ptr.o(.text) for _printf_hex_ptr
+    _printf_o.o(.ARM.Collect$$_printf_percent$$0000000B) refers (Weak) to _printf_oct_int_ll.o(.text) for _printf_int_oct
+    _printf_i.o(.ARM.Collect$$_printf_percent$$00000008) refers (Weak) to _printf_dec.o(.text) for _printf_int_dec
+    _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) refers (Weak) to _printf_dec.o(.text) for _printf_int_dec
+    _printf_u.o(.ARM.Collect$$_printf_percent$$0000000A) refers (Weak) to _printf_dec.o(.text) for _printf_int_dec
+    _printf_f.o(.ARM.Collect$$_printf_percent$$00000003) refers (Weak) to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    _printf_e.o(.ARM.Collect$$_printf_percent$$00000004) refers (Weak) to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    _printf_g.o(.ARM.Collect$$_printf_percent$$00000005) refers (Weak) to printf1.o(x$fpl$printf1) for _printf_fp_dec
+    _printf_a.o(.ARM.Collect$$_printf_percent$$00000006) refers (Weak) to printf2.o(x$fpl$printf2) for _printf_fp_hex
+    _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) refers (Special) to _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017) for _printf_percent_end
+    _printf_lli.o(.ARM.Collect$$_printf_percent$$0000000D) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    _printf_lli.o(.ARM.Collect$$_printf_percent$$0000000D) refers (Weak) to _printf_longlong_dec.o(.text) for _printf_longlong_dec
+    _printf_lld.o(.ARM.Collect$$_printf_percent$$0000000E) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    _printf_lld.o(.ARM.Collect$$_printf_percent$$0000000E) refers (Weak) to _printf_longlong_dec.o(.text) for _printf_longlong_dec
+    _printf_llu.o(.ARM.Collect$$_printf_percent$$0000000F) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    _printf_llu.o(.ARM.Collect$$_printf_percent$$0000000F) refers (Weak) to _printf_longlong_dec.o(.text) for _printf_longlong_dec
+    _printf_lc.o(.ARM.Collect$$_printf_percent$$00000015) refers (Special) to _printf_l.o(.ARM.Collect$$_printf_percent$$00000012) for _printf_l
+    _printf_lc.o(.ARM.Collect$$_printf_percent$$00000015) refers (Weak) to _printf_wchar.o(.text) for _printf_wchar
+    _printf_ls.o(.ARM.Collect$$_printf_percent$$00000016) refers (Special) to _printf_l.o(.ARM.Collect$$_printf_percent$$00000012) for _printf_l
+    _printf_ls.o(.ARM.Collect$$_printf_percent$$00000016) refers (Weak) to _printf_wchar.o(.text) for _printf_wstring
+    _printf_llo.o(.ARM.Collect$$_printf_percent$$00000010) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    _printf_llo.o(.ARM.Collect$$_printf_percent$$00000010) refers (Weak) to _printf_oct_int_ll.o(.text) for _printf_ll_oct
+    _printf_llx.o(.ARM.Collect$$_printf_percent$$00000011) refers (Special) to _printf_ll.o(.ARM.Collect$$_printf_percent$$00000007) for _printf_ll
+    _printf_llx.o(.ARM.Collect$$_printf_percent$$00000011) refers (Weak) to _printf_hex_int_ll_ptr.o(.text) for _printf_ll_hex
+    basic.o(x$fpl$basic) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dnaninf.o(x$fpl$dnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fnaninf.o(x$fpl$fnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fretinf.o(x$fpl$fretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    printf1.o(x$fpl$printf1) refers to _printf_fp_dec.o(.text) for _printf_fp_dec_real
+    printf2.o(x$fpl$printf2) refers to _printf_fp_hex.o(.text) for _printf_fp_hex_real
+    printf2b.o(x$fpl$printf2) refers to _printf_fp_hex.o(.text) for _printf_fp_hex_real
+    cos_i.o(i.__kernel_cos) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
+    cos_i.o(i.__kernel_cos) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    cos_i.o(i.__kernel_cos) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    cos_i.o(i.__kernel_cos) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    cos_i.o(i.__kernel_cos) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
+    cos_i.o(i.__kernel_cos) refers to cos_i.o(.constdata) for .constdata
+    cos_i.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dunder.o(i.__mathlib_dbl_divzero) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_infnan) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    dunder.o(i.__mathlib_dbl_infnan2) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    dunder.o(i.__mathlib_dbl_invalid) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_overflow) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    dunder.o(i.__mathlib_dbl_posinfnan) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    dunder.o(i.__mathlib_dbl_underflow) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    rred.o(i.__ieee754_rem_pio2) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    rred.o(i.__ieee754_rem_pio2) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    rred.o(i.__ieee754_rem_pio2) refers to fabs.o(i.fabs) for fabs
+    rred.o(i.__ieee754_rem_pio2) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    rred.o(i.__ieee754_rem_pio2) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
+    rred.o(i.__ieee754_rem_pio2) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
+    rred.o(i.__ieee754_rem_pio2) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
+    rred.o(i.__ieee754_rem_pio2) refers to basic.o(x$fpl$basic) for __aeabi_dneg
+    rred.o(i.__ieee754_rem_pio2) refers to dflt_clz.o(x$fpl$dfltu) for __aeabi_ui2d
+    rred.o(i.__ieee754_rem_pio2) refers to rred.o(.constdata) for .constdata
+    rred.o(i.__use_accurate_range_reduction) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    rred.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    sin_i.o(i.__kernel_sin) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    sin_i.o(i.__kernel_sin) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    sin_i.o(i.__kernel_sin) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i.o(i.__kernel_sin) refers to daddsub_clz.o(x$fpl$dsub) for __aeabi_dsub
+    sin_i.o(i.__kernel_sin) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
+    sin_i.o(i.__kernel_sin) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    sin_i.o(i.__kernel_sin) refers to sin_i.o(.constdata) for .constdata
+    sin_i.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_errno_addr.o(.text) refers to rt_errno_addr.o(.bss) for __aeabi_errno_addr_data
+    rt_errno_addr_intlibspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_intcommon.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_fp_dec.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    _printf_fp_dec.o(.text) refers (Special) to lc_numeric_c.o(locale$$code) for _get_lc_numeric
+    _printf_fp_dec.o(.text) refers to bigflt0.o(.text) for _btod_etento
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_d2e) for _btod_d2e
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_ediv) for _btod_ediv
+    _printf_fp_dec.o(.text) refers to btod.o(CL$$btod_emul) for _btod_emul
+    _printf_fp_dec.o(.text) refers to lludiv10.o(.text) for _ll_udiv10
+    _printf_fp_dec.o(.text) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    _printf_fp_dec.o(.text) refers to _printf_fp_infnan.o(.text) for _printf_fp_infnan
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec.o(.text) refers to rt_locale_intlibspace.o(.text) for __rt_locale
+    _printf_fp_dec.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_fp_dec_accurate.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    _printf_fp_dec_accurate.o(.text) refers (Special) to lc_numeric_c.o(locale$$code) for _get_lc_numeric
+    _printf_fp_dec_accurate.o(.text) refers to btod_accurate.o(.text) for _btod_main
+    _printf_fp_dec_accurate.o(.text) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    _printf_fp_dec_accurate.o(.text) refers to _printf_fp_infnan.o(.text) for _printf_fp_infnan
+    _printf_fp_dec_accurate.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec_accurate.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_dec_accurate.o(.text) refers to rt_locale_intlibspace.o(.text) for __rt_locale
+    _printf_fp_dec_accurate.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_fp_hex.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    _printf_fp_hex.o(.text) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    _printf_fp_hex.o(.text) refers to _printf_fp_infnan.o(.text) for _printf_fp_infnan
+    _printf_fp_hex.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_hex.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_hex.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    _printf_fp_hex.o(.text) refers to _printf_fp_hex.o(.constdata) for .constdata
+    _printf_fp_hex.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    _printf_char.o(.text) refers (Weak) to _printf_str.o(.text) for _printf_str
+    _printf_wchar.o(.text) refers (Weak) to _printf_wctomb.o(.text) for _printf_wctomb
+    _c16rtomb.o(.text) refers to rt_ctype_table.o(.text) for __rt_ctype_table
+    fabs.o(i.__hardfp_fabs) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fabs.o(i.__softfp_fabs) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fabs.o(i.fabs) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fpclassify.o(i.__ARM_fpclassify) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    poly.o(i.__kernel_poly) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    poly.o(i.__kernel_poly) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    poly.o(i.__kernel_poly) refers to daddsub_clz.o(x$fpl$dadd) for __aeabi_dadd
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_tm4c123.o(.text) for __user_initial_stackheap
+    rt_ctype_table.o(.text) refers to rt_locale_intlibspace.o(.text) for __rt_locale
+    rt_ctype_table.o(.text) refers to lc_ctype_c.o(locale$$code) for _get_lc_ctype
+    rt_locale.o(.text) refers to rt_locale.o(.bss) for __rt_locale_data
+    rt_locale_intlibspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    _printf_fp_infnan.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_pre_padding
+    _printf_fp_infnan.o(.text) refers (Weak) to _printf_pad.o(.text) for _printf_post_padding
+    bigflt0.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    bigflt0.o(.text) refers to btod.o(CL$$btod_emul) for _btod_emul
+    bigflt0.o(.text) refers to btod.o(CL$$btod_ediv) for _btod_ediv
+    bigflt0.o(.text) refers to bigflt0.o(.constdata) for .constdata
+    bigflt0.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e) refers to btod.o(CL$$btod_d2e_norm_op1) for _d2e_norm_op1
+    btod.o(CL$$btod_d2e_norm_op1) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_d2e_norm_op1) refers to btod.o(CL$$btod_d2e_denorm_low) for _d2e_denorm_low
+    btod.o(CL$$btod_d2e_denorm_low) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emul) refers to btod.o(CL$$btod_mult_common) for __btod_mult_common
+    btod.o(CL$$btod_emul) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_ediv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_ediv) refers to btod.o(CL$$btod_div_common) for __btod_div_common
+    btod.o(CL$$btod_ediv) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_emuld) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_emuld) refers to btod.o(CL$$btod_mult_common) for __btod_mult_common
+    btod.o(CL$$btod_emuld) refers to btod.o(CL$$btod_e2d) for _e2d
+    btod.o(CL$$btod_edivd) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_edivd) refers to btod.o(CL$$btod_div_common) for __btod_div_common
+    btod.o(CL$$btod_edivd) refers to btod.o(CL$$btod_e2d) for _e2d
+    btod.o(CL$$btod_e2e) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_e2d) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_e2d) refers to btod.o(CL$$btod_e2e) for _e2e
+    btod.o(CL$$btod_mult_common) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod.o(CL$$btod_div_common) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    btod_accurate.o(.text) refers to btod_accurate_common.o(.text) for _btod_common
+    lc_numeric_c.o(locale$$data) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000018) for __rt_lib_init_lc_numeric_2
+    lc_numeric_c.o(locale$$code) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000018) for __rt_lib_init_lc_numeric_2
+    lc_numeric_c.o(locale$$code) refers to strcmpv7em.o(.text) for strcmp
+    lc_numeric_c.o(locale$$code) refers to lc_numeric_c.o(locale$$data) for __lcnum_c_name
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    istatus.o(x$fpl$ieeestatus) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    btod_accurate_common.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    lc_ctype_c.o(locale$$data) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000014) for __rt_lib_init_lc_ctype_2
+    lc_ctype_c.o(locale$$code) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000014) for __rt_lib_init_lc_ctype_2
+    lc_ctype_c.o(locale$$code) refers to strcmpv7em.o(.text) for strcmp
+    lc_ctype_c.o(locale$$code) refers to lc_ctype_c.o(locale$$data) for __lcctype_c_name
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000011) refers (Weak) to rt_locale_intlibspace.o(.text) for __rt_locale
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers (Weak) to lc_ctype_c.o(locale$$code) for _get_lc_ctype
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers (Weak) to lc_numeric_c.o(locale$$code) for _get_lc_numeric
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing algorithm.o(.text), (0 bytes).
+    Removing algorithm.o(.ARM.exidx.text.pulse_init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.TIMER2B_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.I2C_busy), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.I2C3_Write_Multiple), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.I2C3_Read_Multiple), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.I2C3_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Read_IC), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.GPIO_Init_for_Analog_Comparator), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.DeepSleep_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.AnalogComparator_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.__NVIC_SetPriority), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.GPIOB_Interrupt_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.COMP0_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Set_PC2_High), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.GPIOB_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.delay_ms), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Button_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.GPIOF_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Set_PC2_Low), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Turn_Off), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.LED_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Set_LED_Color), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.PortC_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.SysTick_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.take_ADC_value), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.calculate_threshold_PE4), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.alg_motor_sensor), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_SetCursor), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_OutUDec), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.setStep), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Motor_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_Clear), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_OutString), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_DrawFullImage), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.GetPixelCoordinates), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_SetPxl), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.ADC_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.ADC_Read), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.ADC_Init_PE4), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.ADC_Read_PE4), (8 bytes).
+    Removing algorithm.o(.text.format_distance), (88 bytes).
+    Removing algorithm.o(.ARM.exidx.text.format_distance), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.PortE_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.TRIG_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.TIMER2_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.send_trigger_pulse), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.TIMER2A_Handler), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_Init), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.lcdwrite), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_OutChar), (8 bytes).
+    Removing algorithm.o(.ARM.exidx.text.lcddatawrite), (8 bytes).
+    Removing algorithm.o(.text.Nokia5110_PrintBMP), (518 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_PrintBMP), (8 bytes).
+    Removing algorithm.o(.text.Nokia5110_ClearBuffer), (46 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_ClearBuffer), (8 bytes).
+    Removing algorithm.o(.text.Nokia5110_DisplayBuffer), (16 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_DisplayBuffer), (8 bytes).
+    Removing algorithm.o(.text.Nokia5110_ClrPxl), (50 bytes).
+    Removing algorithm.o(.ARM.exidx.text.Nokia5110_ClrPxl), (8 bytes).
+    Removing algorithm.o(.bss.start_motor), (4 bytes).
+    Removing algorithm.o(.data.keypad_map), (48 bytes).
+    Removing algorithm.o(.data.key_values), (48 bytes).
+    Removing algorithm.o(.data.recorded_value), (4 bytes).
+    Removing algorithm.o(.bss.Screen), (504 bytes).
+    Removing algorithm.o(.rodata.Masks), (8 bytes).
+    Removing algorithm.o(.bss.result_th), (2 bytes).
+    Removing algorithm.o(.bss.formatted_distance), (20 bytes).
+    Removing algorithm.o(.bss.formatted_angle), (20 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.bss.sensor_sum_frac), (4 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing outstr.o(.text), (236 bytes).
+    Removing delay200.o(D_DELAY_200_AREA), (0 bytes).
+    Removing delay200.o(C_DELAY_200_AREA), (16 bytes).
+    Removing system_tm4c123.o(.text), (0 bytes).
+    Removing system_tm4c123.o(.text.SystemCoreClockUpdate), (326 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_tm4c123.o(.text.getOscClk), (360 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.getOscClk), (8 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_tm4c123.o(.data.SystemCoreClock), (4 bytes).
+
+85 unused section(s) (total 2806 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/dczerorl2.s                0x00000000   Number         0  __dczerorl2.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_errno_addr.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_errno_addr_intlibspace.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_ctype_table.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_locale.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_locale_intlibspace.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch_hlt.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/bigflt.c                         0x00000000   Number         0  bigflt0.o ABSOLUTE
+    ../clib/btod.s                           0x00000000   Number         0  btod.o ABSOLUTE
+    ../clib/btod_accurate.c                  0x00000000   Number         0  btod_accurate.o ABSOLUTE
+    ../clib/btod_accurate.c                  0x00000000   Number         0  btod_accurate_common.o ABSOLUTE
+    ../clib/fenv.c                           0x00000000   Number         0  _rserrno.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/locale.c                         0x00000000   Number         0  _c16rtomb.o ABSOLUTE
+    ../clib/locale.s                         0x00000000   Number         0  lc_numeric_c.o ABSOLUTE
+    ../clib/locale.s                         0x00000000   Number         0  lc_ctype_c.o ABSOLUTE
+    ../clib/longlong.s                       0x00000000   Number         0  lludiv10.o ABSOLUTE
+    ../clib/longlong.s                       0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  strcmpv7em.o ABSOLUTE
+    ../clib/misc.s                           0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  snprintf.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_pad.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_truncate.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_str.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_dec.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_charcount.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_char_common.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _snputc.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_wctomb.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_longlong_dec.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_oct_ll.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_oct_int.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_oct_int_ll.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_ll.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_int.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_int_ll.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_ptr.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_int_ptr.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_ll_ptr.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_hex_int_ll_ptr.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_flags.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_ss.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_flags_ss.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_wp.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_flags_wp.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_ss_wp.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_flags_ss_wp.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_intcommon.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_fp_dec.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_fp_dec_accurate.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_fp_hex.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  __printf_nopercent.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_char.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_wchar.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_fp_infnan.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_c.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_s.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_n.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_x.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_p.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_o.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_i.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_d.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_u.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_f.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_e.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_g.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_a.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_percent.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_lli.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_lld.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_llu.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_ll.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_l.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_lc.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_ls.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_llo.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_llx.o ABSOLUTE
+    ../clib/printf_percent.s                 0x00000000   Number         0  _printf_percent_end.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/basic.s                         0x00000000   Number         0  basic.o ABSOLUTE
+    ../fplib/d2f.s                           0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/daddsub.s                       0x00000000   Number         0  daddsub_clz.o ABSOLUTE
+    ../fplib/ddiv.s                          0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/dfix.s                          0x00000000   Number         0  dfix.o ABSOLUTE
+    ../fplib/dflt.s                          0x00000000   Number         0  dflt_clz.o ABSOLUTE
+    ../fplib/dmul.s                          0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/dnaninf.s                       0x00000000   Number         0  dnaninf.o ABSOLUTE
+    ../fplib/dretinf.s                       0x00000000   Number         0  dretinf.o ABSOLUTE
+    ../fplib/f2d.s                           0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/fnaninf.s                       0x00000000   Number         0  fnaninf.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    ../fplib/fretinf.s                       0x00000000   Number         0  fretinf.o ABSOLUTE
+    ../fplib/istatus.s                       0x00000000   Number         0  istatus.o ABSOLUTE
+    ../fplib/printf1.s                       0x00000000   Number         0  printf1.o ABSOLUTE
+    ../fplib/printf2.s                       0x00000000   Number         0  printf2.o ABSOLUTE
+    ../fplib/printf2a.s                      0x00000000   Number         0  printf2a.o ABSOLUTE
+    ../fplib/printf2b.s                      0x00000000   Number         0  printf2b.o ABSOLUTE
+    ../fplib/usenofp.s                       0x00000000   Number         0  usenofp.o ABSOLUTE
+    ../mathlib/cos.c                         0x00000000   Number         0  cos.o ABSOLUTE
+    ../mathlib/cos_i.c                       0x00000000   Number         0  cos_i.o ABSOLUTE
+    ../mathlib/dunder.c                      0x00000000   Number         0  dunder.o ABSOLUTE
+    ../mathlib/fabs.c                        0x00000000   Number         0  fabs.o ABSOLUTE
+    ../mathlib/fpclassify.c                  0x00000000   Number         0  fpclassify.o ABSOLUTE
+    ../mathlib/poly.c                        0x00000000   Number         0  poly.o ABSOLUTE
+    ../mathlib/rred.c                        0x00000000   Number         0  rred.o ABSOLUTE
+    ../mathlib/sin.c                         0x00000000   Number         0  sin.o ABSOLUTE
+    ../mathlib/sin_i.c                       0x00000000   Number         0  sin_i.o ABSOLUTE
+    DELAY200.asm                             0x00000000   Number         0  delay200.o ABSOLUTE
+    GPIO_B_INITIALIZE.s                      0x00000000   Number         0  gpio_b_initialize.o ABSOLUTE
+    OutStr.s                                 0x00000000   Number         0  outstr.o ABSOLUTE
+    RTE/Device/TM4C123GH6PM/startup_TM4C123.s 0x00000000   Number         0  startup_tm4c123.o ABSOLUTE
+    algorithm.c                              0x00000000   Number         0  algorithm.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    keypad.s                                 0x00000000   Number         0  keypad.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    system_TM4C123.c                         0x00000000   Number         0  system_tm4c123.o ABSOLUTE
+    RESET                                    0x00000000   Section      620  startup_tm4c123.o(RESET)
+    !!!main                                  0x0000026c   Section        8  __main.o(!!!main)
+    !!!scatter                               0x00000274   Section       92  __scatter.o(!!!scatter)
+    !!dczerorl2                              0x000002d0   Section       90  __dczerorl2.o(!!dczerorl2)
+    !!handler_null                           0x0000032c   Section        2  __scatter.o(!!handler_null)
+    !!handler_zi                             0x00000330   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x0000034c   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000001          0x0000034e   Section        4  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    .ARM.Collect$$libinit$$00000004          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$00000006          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000006)
+    .ARM.Collect$$libinit$$0000000C          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000010          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000010)
+    .ARM.Collect$$libinit$$00000013          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$00000027          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000027)
+    .ARM.Collect$$libinit$$0000002E          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000034          0x00000352   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000034)
+    .ARM.Collect$$libinit$$00000035          0x00000352   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000035)
+    .ARM.Collect$$libshutdown$$00000000      0x00000354   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x00000356   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x00000356   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x00000358   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x00000358   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x00000358   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x0000035e   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0000035e   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x00000362   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x00000362   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x0000036a   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x0000036c   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x0000036c   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x00000370   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    $v0                                      0x00000378   Number         0  startup_tm4c123.o(.text)
+    .text                                    0x00000378   Section      276  startup_tm4c123.o(.text)
+    .text                                    0x0000048c   Section        0  heapauxi.o(.text)
+    .text                                    0x00000492   Section        0  _rserrno.o(.text)
+    .text                                    0x000004a8   Section        8  rt_errno_addr_intlibspace.o(.text)
+    .text                                    0x000004b0   Section        8  libspace.o(.text)
+    .text                                    0x000004b8   Section       74  sys_stackheap_outer.o(.text)
+    .text                                    0x00000502   Section        0  exit.o(.text)
+    .text                                    0x00000514   Section        0  sys_exit.o(.text)
+    .text                                    0x00000520   Section        2  use_no_semi.o(.text)
+    .text                                    0x00000522   Section        0  indicate_semi.o(.text)
+    [Anonymous Symbol]                       0x00000524   Section        0  algorithm.o(.text.ADC_Init)
+    [Anonymous Symbol]                       0x000005c4   Section        0  algorithm.o(.text.ADC_Init_PE4)
+    [Anonymous Symbol]                       0x00000664   Section        0  algorithm.o(.text.ADC_Read)
+    [Anonymous Symbol]                       0x000006b0   Section        0  algorithm.o(.text.ADC_Read_PE4)
+    [Anonymous Symbol]                       0x000006fc   Section        0  algorithm.o(.text.AnalogComparator_Init)
+    [Anonymous Symbol]                       0x000007bc   Section        0  algorithm.o(.text.Button_Init)
+    [Anonymous Symbol]                       0x0000089c   Section        0  algorithm.o(.text.COMP0_Handler)
+    [Anonymous Symbol]                       0x00000910   Section        0  algorithm.o(.text.DeepSleep_Init)
+    [Anonymous Symbol]                       0x00000924   Section        0  algorithm.o(.text.GPIOB_Handler)
+    __arm_cp.15_1                            0x00000c4c   Number         4  algorithm.o(.text.GPIOB_Handler)
+    [Anonymous Symbol]                       0x00000d3c   Section        0  algorithm.o(.text.GPIOB_Interrupt_Init)
+    [Anonymous Symbol]                       0x00000d94   Section        0  algorithm.o(.text.GPIOF_Handler)
+    [Anonymous Symbol]                       0x00000dd0   Section        0  algorithm.o(.text.GPIO_Init_for_Analog_Comparator)
+    [Anonymous Symbol]                       0x00000e50   Section        0  algorithm.o(.text.GetPixelCoordinates)
+    [Anonymous Symbol]                       0x00000f90   Section        0  algorithm.o(.text.I2C3_Init)
+    [Anonymous Symbol]                       0x0000100c   Section        0  algorithm.o(.text.I2C3_Read_Multiple)
+    [Anonymous Symbol]                       0x0000111c   Section        0  algorithm.o(.text.I2C3_Write_Multiple)
+    [Anonymous Symbol]                       0x000011c8   Section        0  algorithm.o(.text.I2C_busy)
+    [Anonymous Symbol]                       0x000011e0   Section        0  algorithm.o(.text.LED_Init)
+    [Anonymous Symbol]                       0x00001248   Section        0  algorithm.o(.text.Motor_Handler)
+    [Anonymous Symbol]                       0x000013d4   Section        0  algorithm.o(.text.Nokia5110_Clear)
+    [Anonymous Symbol]                       0x00001404   Section        0  algorithm.o(.text.Nokia5110_DrawFullImage)
+    [Anonymous Symbol]                       0x0000143c   Section        0  algorithm.o(.text.Nokia5110_Init)
+    [Anonymous Symbol]                       0x0000159c   Section        0  algorithm.o(.text.Nokia5110_OutChar)
+    [Anonymous Symbol]                       0x000015ec   Section        0  algorithm.o(.text.Nokia5110_OutString)
+    [Anonymous Symbol]                       0x00001610   Section        0  algorithm.o(.text.Nokia5110_OutUDec)
+    [Anonymous Symbol]                       0x00001924   Section        0  algorithm.o(.text.Nokia5110_SetCursor)
+    [Anonymous Symbol]                       0x00001970   Section        0  algorithm.o(.text.Nokia5110_SetPxl)
+    [Anonymous Symbol]                       0x000019c8   Section        0  algorithm.o(.text.PortC_Init)
+    [Anonymous Symbol]                       0x00001a40   Section        0  algorithm.o(.text.PortE_Init)
+    [Anonymous Symbol]                       0x00001ab8   Section        0  algorithm.o(.text.Read_IC)
+    [Anonymous Symbol]                       0x00001cd0   Section        0  algorithm.o(.text.Set_LED_Color)
+    [Anonymous Symbol]                       0x00001d88   Section        0  algorithm.o(.text.Set_PC2_High)
+    [Anonymous Symbol]                       0x00001d9c   Section        0  algorithm.o(.text.Set_PC2_Low)
+    [Anonymous Symbol]                       0x00001db0   Section        0  algorithm.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x000020d4   Section        0  algorithm.o(.text.SysTick_Init)
+    [Anonymous Symbol]                       0x00002168   Section        0  system_tm4c123.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0000217c   Section        0  algorithm.o(.text.TIMER2A_Handler)
+    [Anonymous Symbol]                       0x00002254   Section        0  algorithm.o(.text.TIMER2B_Handler)
+    [Anonymous Symbol]                       0x0000233c   Section        0  algorithm.o(.text.TIMER2_Init)
+    [Anonymous Symbol]                       0x00002424   Section        0  algorithm.o(.text.TRIG_Init)
+    [Anonymous Symbol]                       0x0000245c   Section        0  algorithm.o(.text.Turn_Off)
+    __NVIC_EnableIRQ                         0x00002481   Thumb Code    48  algorithm.o(.text.__NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x00002480   Section        0  algorithm.o(.text.__NVIC_EnableIRQ)
+    __NVIC_SetPriority                       0x000024b1   Thumb Code    66  algorithm.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x000024b0   Section        0  algorithm.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x000024f8   Section        0  algorithm.o(.text.alg_motor_sensor)
+    [Anonymous Symbol]                       0x000025f4   Section        0  algorithm.o(.text.calculate_threshold_PE4)
+    [Anonymous Symbol]                       0x0000263c   Section        0  algorithm.o(.text.delay_ms)
+    lcddatawrite                             0x0000268d   Thumb Code    58  algorithm.o(.text.lcddatawrite)
+    [Anonymous Symbol]                       0x0000268c   Section        0  algorithm.o(.text.lcddatawrite)
+    lcdwrite                                 0x000026c9   Thumb Code   144  algorithm.o(.text.lcdwrite)
+    [Anonymous Symbol]                       0x000026c8   Section        0  algorithm.o(.text.lcdwrite)
+    [Anonymous Symbol]                       0x00002758   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x000029c8   Section        0  algorithm.o(.text.pulse_init)
+    [Anonymous Symbol]                       0x00002acc   Section        0  algorithm.o(.text.send_trigger_pulse)
+    [Anonymous Symbol]                       0x00002b10   Section        0  algorithm.o(.text.setStep)
+    [Anonymous Symbol]                       0x00002b8c   Section        0  algorithm.o(.text.take_ADC_value)
+    i.__ARM_fpclassify                       0x00002bd4   Section        0  fpclassify.o(i.__ARM_fpclassify)
+    i.__hardfp_cos                           0x00002c08   Section        0  cos.o(i.__hardfp_cos)
+    i.__hardfp_sin                           0x00002cd0   Section        0  sin.o(i.__hardfp_sin)
+    i.__ieee754_rem_pio2                     0x00002d98   Section        0  rred.o(i.__ieee754_rem_pio2)
+    i.__kernel_cos                           0x000031d0   Section        0  cos_i.o(i.__kernel_cos)
+    i.__kernel_poly                          0x00003340   Section        0  poly.o(i.__kernel_poly)
+    i.__kernel_sin                           0x00003438   Section        0  sin_i.o(i.__kernel_sin)
+    i.__mathlib_dbl_infnan                   0x00003568   Section        0  dunder.o(i.__mathlib_dbl_infnan)
+    i.__mathlib_dbl_invalid                  0x00003580   Section        0  dunder.o(i.__mathlib_dbl_invalid)
+    i.__mathlib_dbl_underflow                0x000035a0   Section        0  dunder.o(i.__mathlib_dbl_underflow)
+    i.fabs                                   0x000035c0   Section        0  fabs.o(i.fabs)
+    $v0                                      0x000035d8   Number         0  gpio_b_initialize.o(main_area)
+    main_area                                0x000035d8   Section      136  gpio_b_initialize.o(main_area)
+    $v0                                      0x00003660   Number         0  keypad.o(main_area)
+    main_area                                0x00003660   Section      344  keypad.o(main_area)
+    $v0                                      0x000037b8   Number         0  basic.o(x$fpl$basic)
+    x$fpl$basic                              0x000037b8   Section       24  basic.o(x$fpl$basic)
+    $v0                                      0x000037d0   Number         0  d2f.o(x$fpl$d2f)
+    x$fpl$d2f                                0x000037d0   Section       98  d2f.o(x$fpl$d2f)
+    $v0                                      0x00003834   Number         0  daddsub_clz.o(x$fpl$dadd)
+    x$fpl$dadd                               0x00003834   Section      336  daddsub_clz.o(x$fpl$dadd)
+    _dadd1                                   0x00003845   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    $v0                                      0x00003984   Number         0  ddiv.o(x$fpl$ddiv)
+    x$fpl$ddiv                               0x00003984   Section      696  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x0000398b   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    $v0                                      0x00003c3c   Number         0  dfix.o(x$fpl$dfix)
+    x$fpl$dfix                               0x00003c3c   Section       94  dfix.o(x$fpl$dfix)
+    $v0                                      0x00003c9a   Number         0  dflt_clz.o(x$fpl$dflt)
+    x$fpl$dflt                               0x00003c9a   Section       46  dflt_clz.o(x$fpl$dflt)
+    $v0                                      0x00003cc8   Number         0  dflt_clz.o(x$fpl$dfltu)
+    x$fpl$dfltu                              0x00003cc8   Section       38  dflt_clz.o(x$fpl$dfltu)
+    $v0                                      0x00003cf0   Number         0  dmul.o(x$fpl$dmul)
+    x$fpl$dmul                               0x00003cf0   Section      340  dmul.o(x$fpl$dmul)
+    $v0                                      0x00003e44   Number         0  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dnaninf                            0x00003e44   Section      156  dnaninf.o(x$fpl$dnaninf)
+    $v0                                      0x00003ee0   Number         0  dretinf.o(x$fpl$dretinf)
+    x$fpl$dretinf                            0x00003ee0   Section       12  dretinf.o(x$fpl$dretinf)
+    $v0                                      0x00003eec   Number         0  daddsub_clz.o(x$fpl$drsb)
+    x$fpl$drsb                               0x00003eec   Section       22  daddsub_clz.o(x$fpl$drsb)
+    $v0                                      0x00003f04   Number         0  daddsub_clz.o(x$fpl$dsub)
+    x$fpl$dsub                               0x00003f04   Section      476  daddsub_clz.o(x$fpl$dsub)
+    _dsub1                                   0x00003f15   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    $v0                                      0x000040e0   Number         0  f2d.o(x$fpl$f2d)
+    x$fpl$f2d                                0x000040e0   Section       86  f2d.o(x$fpl$f2d)
+    $v0                                      0x00004136   Number         0  fnaninf.o(x$fpl$fnaninf)
+    x$fpl$fnaninf                            0x00004136   Section      140  fnaninf.o(x$fpl$fnaninf)
+    $v0                                      0x000041c2   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x000041c2   Section       26  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x000041dc   Number         0  fretinf.o(x$fpl$fretinf)
+    x$fpl$fretinf                            0x000041dc   Section       10  fretinf.o(x$fpl$fretinf)
+    x$fpl$usenofp                            0x000041e6   Section        0  usenofp.o(x$fpl$usenofp)
+    C                                        0x000041e8   Data          48  cos_i.o(.constdata)
+    .constdata                               0x000041e8   Section       48  cos_i.o(.constdata)
+    pio2s                                    0x00004218   Data          48  rred.o(.constdata)
+    .constdata                               0x00004218   Section      204  rred.o(.constdata)
+    twooverpi                                0x00004248   Data         156  rred.o(.constdata)
+    S                                        0x000042e8   Data          40  sin_i.o(.constdata)
+    .constdata                               0x000042e8   Section       40  sin_i.o(.constdata)
+    ASCII                                    0x00004310   Data         480  algorithm.o(.rodata.ASCII)
+    [Anonymous Symbol]                       0x00004310   Section        0  algorithm.o(.rodata.ASCII)
+    .L.str.1                                 0x000044f0   Data          11  algorithm.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x000044f0   Section        0  algorithm.o(.rodata.str1.1)
+    .L.str.2                                 0x000044fb   Data           8  algorithm.o(.rodata.str1.1)
+    .L.str.3                                 0x00004503   Data          29  algorithm.o(.rodata.str1.1)
+    .L.str                                   0x00004520   Data          13  algorithm.o(.rodata.str1.1)
+    .L.str.4                                 0x0000452d   Data           8  algorithm.o(.rodata.str1.1)
+    .bss                                     0x20000218   Section       96  libspace.o(.bss)
+    TIMER2B_Handler.state                    0x20000278   Data           4  algorithm.o(.bss.TIMER2B_Handler.state)
+    [Anonymous Symbol]                       0x20000278   Section        0  algorithm.o(.bss.TIMER2B_Handler.state)
+    Heap_Mem                                 0x200012a0   Data           0  startup_tm4c123.o(HEAP)
+    Stack_Mem                                0x200012a0   Data         512  startup_tm4c123.o(STACK)
+    HEAP                                     0x200012a0   Section        0  startup_tm4c123.o(HEAP)
+    STACK                                    0x200012a0   Section      512  startup_tm4c123.o(STACK)
+    __initial_sp                             0x200014a0   Data           0  startup_tm4c123.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$EBA8$UX$STANDARDLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_tm4c123.o(RESET)
+    _printf_flags                            0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __arm_relocate_pie_                       - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _printf_mbtowc                            - Undefined Weak Reference
+    _printf_wc                                - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __Vectors_End                            0x0000026c   Data           0  startup_tm4c123.o(RESET)
+    __Vectors_Size                           0x0000026c   Number         0  startup_tm4c123.o ABSOLUTE
+    __main                                   0x0000026d   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x00000275   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x00000275   Thumb Code    84  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x00000275   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_loop                       0x0000027f   Thumb Code     0  __scatter.o(!!!scatter)
+    __decompress                             0x000002d1   Thumb Code    90  __dczerorl2.o(!!dczerorl2)
+    __decompress1                            0x000002d1   Thumb Code     0  __dczerorl2.o(!!dczerorl2)
+    __scatterload_null                       0x0000032d   Thumb Code     2  __scatter.o(!!handler_null)
+    __scatterload_zeroinit                   0x00000331   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x0000034d   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_fp_1                       0x0000034f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    __rt_lib_init_alloca_1                   0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_argv_1                     0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_atexit_1                   0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_clock_1                    0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_cpp_1                      0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000034)
+    __rt_lib_init_exceptions_1               0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_fp_trap_1                  0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_getenv_1                   0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_heap_1                     0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_init_lc_collate_1               0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_ctype_1                 0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_monetary_1              0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_numeric_1               0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_lc_time_1                  0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_preinit_1                  0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000006)
+    __rt_lib_init_rand_1                     0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000010)
+    __rt_lib_init_relocate_pie_1             0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_return                     0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000035)
+    __rt_lib_init_signal_1                   0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_stdio_1                    0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000027)
+    __rt_lib_init_user_alloc_1               0x00000353   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_shutdown                        0x00000355   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x00000357   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x00000359   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x00000359   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x00000359   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x0000035f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0000035f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x00000363   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x00000363   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x0000036b   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x0000036d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x0000036d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x00000371   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x00000379   Thumb Code     8  startup_tm4c123.o(.text)
+    NMI_Handler                              0x00000381   Thumb Code     2  startup_tm4c123.o(.text)
+    HardFault_Handler                        0x00000383   Thumb Code     2  startup_tm4c123.o(.text)
+    MemManage_Handler                        0x00000385   Thumb Code     2  startup_tm4c123.o(.text)
+    BusFault_Handler                         0x00000387   Thumb Code     2  startup_tm4c123.o(.text)
+    UsageFault_Handler                       0x00000389   Thumb Code     2  startup_tm4c123.o(.text)
+    SVC_Handler                              0x0000038b   Thumb Code     2  startup_tm4c123.o(.text)
+    DebugMon_Handler                         0x0000038d   Thumb Code     2  startup_tm4c123.o(.text)
+    PendSV_Handler                           0x0000038f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOA_Handler                            0x00000393   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOC_Handler                            0x00000397   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOD_Handler                            0x00000399   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOE_Handler                            0x0000039b   Thumb Code     2  startup_tm4c123.o(.text)
+    UART0_Handler                            0x0000039d   Thumb Code     2  startup_tm4c123.o(.text)
+    UART1_Handler                            0x0000039f   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI0_Handler                             0x000003a1   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C0_Handler                             0x000003a3   Thumb Code     2  startup_tm4c123.o(.text)
+    PMW0_FAULT_Handler                       0x000003a5   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_0_Handler                           0x000003a7   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_1_Handler                           0x000003a9   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_2_Handler                           0x000003ab   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI0_Handler                             0x000003ad   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS0_Handler                          0x000003af   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS1_Handler                          0x000003b1   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS2_Handler                          0x000003b3   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS3_Handler                          0x000003b5   Thumb Code     2  startup_tm4c123.o(.text)
+    WDT0_Handler                             0x000003b7   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER0A_Handler                          0x000003b9   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER0B_Handler                          0x000003bb   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER1A_Handler                          0x000003bd   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER1B_Handler                          0x000003bf   Thumb Code     2  startup_tm4c123.o(.text)
+    COMP1_Handler                            0x000003c7   Thumb Code     2  startup_tm4c123.o(.text)
+    COMP2_Handler                            0x000003c9   Thumb Code     2  startup_tm4c123.o(.text)
+    SYSCTL_Handler                           0x000003cb   Thumb Code     2  startup_tm4c123.o(.text)
+    FLASH_Handler                            0x000003cd   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOG_Handler                            0x000003d1   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOH_Handler                            0x000003d3   Thumb Code     2  startup_tm4c123.o(.text)
+    UART2_Handler                            0x000003d5   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI1_Handler                             0x000003d7   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER3A_Handler                          0x000003d9   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER3B_Handler                          0x000003db   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C1_Handler                             0x000003dd   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI1_Handler                             0x000003df   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN0_Handler                             0x000003e1   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN1_Handler                             0x000003e3   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN2_Handler                             0x000003e5   Thumb Code     2  startup_tm4c123.o(.text)
+    HIB_Handler                              0x000003e7   Thumb Code     2  startup_tm4c123.o(.text)
+    USB0_Handler                             0x000003e9   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_3_Handler                           0x000003eb   Thumb Code     2  startup_tm4c123.o(.text)
+    UDMA_Handler                             0x000003ed   Thumb Code     2  startup_tm4c123.o(.text)
+    UDMAERR_Handler                          0x000003ef   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS0_Handler                          0x000003f1   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS1_Handler                          0x000003f3   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS2_Handler                          0x000003f5   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS3_Handler                          0x000003f7   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOJ_Handler                            0x000003f9   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOK_Handler                            0x000003fb   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOL_Handler                            0x000003fd   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI2_Handler                             0x000003ff   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI3_Handler                             0x00000401   Thumb Code     2  startup_tm4c123.o(.text)
+    UART3_Handler                            0x00000403   Thumb Code     2  startup_tm4c123.o(.text)
+    UART4_Handler                            0x00000405   Thumb Code     2  startup_tm4c123.o(.text)
+    UART5_Handler                            0x00000407   Thumb Code     2  startup_tm4c123.o(.text)
+    UART6_Handler                            0x00000409   Thumb Code     2  startup_tm4c123.o(.text)
+    UART7_Handler                            0x0000040b   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C2_Handler                             0x0000040d   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C3_Handler                             0x0000040f   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER4A_Handler                          0x00000411   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER4B_Handler                          0x00000413   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER5A_Handler                          0x00000415   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER5B_Handler                          0x00000417   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER0A_Handler                         0x00000419   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER0B_Handler                         0x0000041b   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER1A_Handler                         0x0000041d   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER1B_Handler                         0x0000041f   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER2A_Handler                         0x00000421   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER2B_Handler                         0x00000423   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER3A_Handler                         0x00000425   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER3B_Handler                         0x00000427   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER4A_Handler                         0x00000429   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER4B_Handler                         0x0000042b   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER5A_Handler                         0x0000042d   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER5B_Handler                         0x0000042f   Thumb Code     2  startup_tm4c123.o(.text)
+    FPU_Handler                              0x00000431   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C4_Handler                             0x00000433   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C5_Handler                             0x00000435   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOM_Handler                            0x00000437   Thumb Code     2  startup_tm4c123.o(.text)
+    GPION_Handler                            0x00000439   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI2_Handler                             0x0000043b   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP0_Handler                           0x0000043d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP1_Handler                           0x0000043f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP2_Handler                           0x00000441   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP3_Handler                           0x00000443   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP4_Handler                           0x00000445   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP5_Handler                           0x00000447   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP6_Handler                           0x00000449   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP7_Handler                           0x0000044b   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ0_Handler                           0x0000044d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ1_Handler                           0x0000044f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ2_Handler                           0x00000451   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ3_Handler                           0x00000453   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ4_Handler                           0x00000455   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ5_Handler                           0x00000457   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ6_Handler                           0x00000459   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ7_Handler                           0x0000045b   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOR_Handler                            0x0000045d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOS_Handler                            0x0000045f   Thumb Code     2  startup_tm4c123.o(.text)
+    PMW1_0_Handler                           0x00000461   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_1_Handler                           0x00000463   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_2_Handler                           0x00000465   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_3_Handler                           0x00000467   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_FAULT_Handler                       0x00000469   Thumb Code     2  startup_tm4c123.o(.text)
+    __user_initial_stackheap                 0x0000046d   Thumb Code     0  startup_tm4c123.o(.text)
+    __use_two_region_memory                  0x0000048d   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x0000048f   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x00000491   Thumb Code     2  heapauxi.o(.text)
+    __read_errno                             0x00000493   Thumb Code    10  _rserrno.o(.text)
+    __set_errno                              0x0000049d   Thumb Code    12  _rserrno.o(.text)
+    __aeabi_errno_addr                       0x000004a9   Thumb Code     8  rt_errno_addr_intlibspace.o(.text)
+    __errno$intlibspace                      0x000004a9   Thumb Code     0  rt_errno_addr_intlibspace.o(.text)
+    __rt_errno_addr$intlibspace              0x000004a9   Thumb Code     0  rt_errno_addr_intlibspace.o(.text)
+    __user_libspace                          0x000004b1   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x000004b1   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x000004b1   Thumb Code     0  libspace.o(.text)
+    __user_setup_stackheap                   0x000004b9   Thumb Code    74  sys_stackheap_outer.o(.text)
+    exit                                     0x00000503   Thumb Code    18  exit.o(.text)
+    _sys_exit                                0x00000515   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000521   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000521   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x00000523   Thumb Code     0  indicate_semi.o(.text)
+    ADC_Init                                 0x00000525   Thumb Code   158  algorithm.o(.text.ADC_Init)
+    ADC_Init_PE4                             0x000005c5   Thumb Code   158  algorithm.o(.text.ADC_Init_PE4)
+    ADC_Read                                 0x00000665   Thumb Code    74  algorithm.o(.text.ADC_Read)
+    ADC_Read_PE4                             0x000006b1   Thumb Code    74  algorithm.o(.text.ADC_Read_PE4)
+    AnalogComparator_Init                    0x000006fd   Thumb Code   192  algorithm.o(.text.AnalogComparator_Init)
+    Button_Init                              0x000007bd   Thumb Code   224  algorithm.o(.text.Button_Init)
+    COMP0_Handler                            0x0000089d   Thumb Code   114  algorithm.o(.text.COMP0_Handler)
+    DeepSleep_Init                           0x00000911   Thumb Code    18  algorithm.o(.text.DeepSleep_Init)
+    GPIOB_Handler                            0x00000925   Thumb Code  1046  algorithm.o(.text.GPIOB_Handler)
+    GPIOB_Interrupt_Init                     0x00000d3d   Thumb Code    88  algorithm.o(.text.GPIOB_Interrupt_Init)
+    GPIOF_Handler                            0x00000d95   Thumb Code    58  algorithm.o(.text.GPIOF_Handler)
+    GPIO_Init_for_Analog_Comparator          0x00000dd1   Thumb Code   124  algorithm.o(.text.GPIO_Init_for_Analog_Comparator)
+    GetPixelCoordinates                      0x00000e51   Thumb Code   288  algorithm.o(.text.GetPixelCoordinates)
+    I2C3_Init                                0x00000f91   Thumb Code   122  algorithm.o(.text.I2C3_Init)
+    I2C3_Read_Multiple                       0x0000100d   Thumb Code   270  algorithm.o(.text.I2C3_Read_Multiple)
+    I2C3_Write_Multiple                      0x0000111d   Thumb Code   172  algorithm.o(.text.I2C3_Write_Multiple)
+    I2C_busy                                 0x000011c9   Thumb Code    24  algorithm.o(.text.I2C_busy)
+    LED_Init                                 0x000011e1   Thumb Code   104  algorithm.o(.text.LED_Init)
+    Motor_Handler                            0x00001249   Thumb Code   396  algorithm.o(.text.Motor_Handler)
+    Nokia5110_Clear                          0x000013d5   Thumb Code    48  algorithm.o(.text.Nokia5110_Clear)
+    Nokia5110_DrawFullImage                  0x00001405   Thumb Code    56  algorithm.o(.text.Nokia5110_DrawFullImage)
+    Nokia5110_Init                           0x0000143d   Thumb Code   352  algorithm.o(.text.Nokia5110_Init)
+    Nokia5110_OutChar                        0x0000159d   Thumb Code    80  algorithm.o(.text.Nokia5110_OutChar)
+    Nokia5110_OutString                      0x000015ed   Thumb Code    36  algorithm.o(.text.Nokia5110_OutString)
+    Nokia5110_OutUDec                        0x00001611   Thumb Code   784  algorithm.o(.text.Nokia5110_OutUDec)
+    Nokia5110_SetCursor                      0x00001925   Thumb Code    76  algorithm.o(.text.Nokia5110_SetCursor)
+    Nokia5110_SetPxl                         0x00001971   Thumb Code    88  algorithm.o(.text.Nokia5110_SetPxl)
+    PortC_Init                               0x000019c9   Thumb Code   120  algorithm.o(.text.PortC_Init)
+    PortE_Init                               0x00001a41   Thumb Code   114  algorithm.o(.text.PortE_Init)
+    Read_IC                                  0x00001ab9   Thumb Code   480  algorithm.o(.text.Read_IC)
+    Set_LED_Color                            0x00001cd1   Thumb Code   182  algorithm.o(.text.Set_LED_Color)
+    Set_PC2_High                             0x00001d89   Thumb Code    18  algorithm.o(.text.Set_PC2_High)
+    Set_PC2_Low                              0x00001d9d   Thumb Code    18  algorithm.o(.text.Set_PC2_Low)
+    SysTick_Handler                          0x00001db1   Thumb Code   788  algorithm.o(.text.SysTick_Handler)
+    SysTick_Init                             0x000020d5   Thumb Code   148  algorithm.o(.text.SysTick_Init)
+    SystemInit                               0x00002169   Thumb Code    18  system_tm4c123.o(.text.SystemInit)
+    TIMER2A_Handler                          0x0000217d   Thumb Code   216  algorithm.o(.text.TIMER2A_Handler)
+    TIMER2B_Handler                          0x00002255   Thumb Code   230  algorithm.o(.text.TIMER2B_Handler)
+    TIMER2_Init                              0x0000233d   Thumb Code   232  algorithm.o(.text.TIMER2_Init)
+    TRIG_Init                                0x00002425   Thumb Code    56  algorithm.o(.text.TRIG_Init)
+    Turn_Off                                 0x0000245d   Thumb Code    34  algorithm.o(.text.Turn_Off)
+    alg_motor_sensor                         0x000024f9   Thumb Code   232  algorithm.o(.text.alg_motor_sensor)
+    calculate_threshold_PE4                  0x000025f5   Thumb Code    64  algorithm.o(.text.calculate_threshold_PE4)
+    delay_ms                                 0x0000263d   Thumb Code    78  algorithm.o(.text.delay_ms)
+    main                                     0x00002759   Thumb Code   592  main.o(.text.main)
+    pulse_init                               0x000029c9   Thumb Code   260  algorithm.o(.text.pulse_init)
+    send_trigger_pulse                       0x00002acd   Thumb Code    64  algorithm.o(.text.send_trigger_pulse)
+    setStep                                  0x00002b11   Thumb Code   124  algorithm.o(.text.setStep)
+    take_ADC_value                           0x00002b8d   Thumb Code    64  algorithm.o(.text.take_ADC_value)
+    __ARM_fpclassify                         0x00002bd5   Thumb Code    48  fpclassify.o(i.__ARM_fpclassify)
+    __hardfp_cos                             0x00002c09   Thumb Code   180  cos.o(i.__hardfp_cos)
+    __hardfp_sin                             0x00002cd1   Thumb Code   180  sin.o(i.__hardfp_sin)
+    __ieee754_rem_pio2                       0x00002d99   Thumb Code   938  rred.o(i.__ieee754_rem_pio2)
+    __kernel_cos                             0x000031d1   Thumb Code   322  cos_i.o(i.__kernel_cos)
+    __kernel_poly                            0x00003341   Thumb Code   248  poly.o(i.__kernel_poly)
+    __kernel_sin                             0x00003439   Thumb Code   280  sin_i.o(i.__kernel_sin)
+    __mathlib_dbl_infnan                     0x00003569   Thumb Code    20  dunder.o(i.__mathlib_dbl_infnan)
+    __mathlib_dbl_invalid                    0x00003581   Thumb Code    24  dunder.o(i.__mathlib_dbl_invalid)
+    __mathlib_dbl_underflow                  0x000035a1   Thumb Code    24  dunder.o(i.__mathlib_dbl_underflow)
+    fabs                                     0x000035c1   Thumb Code    24  fabs.o(i.fabs)
+    GPIO_B_INITIALIZE                        0x000035d9   Thumb Code     0  gpio_b_initialize.o(main_area)
+    keypad                                   0x00003661   Thumb Code     0  keypad.o(main_area)
+    __aeabi_dneg                             0x000037b9   Thumb Code     0  basic.o(x$fpl$basic)
+    _dneg                                    0x000037b9   Thumb Code     6  basic.o(x$fpl$basic)
+    __aeabi_fneg                             0x000037bf   Thumb Code     0  basic.o(x$fpl$basic)
+    _fneg                                    0x000037bf   Thumb Code     6  basic.o(x$fpl$basic)
+    _dabs                                    0x000037c5   Thumb Code     6  basic.o(x$fpl$basic)
+    _fabs                                    0x000037cb   Thumb Code     6  basic.o(x$fpl$basic)
+    __aeabi_d2f                              0x000037d1   Thumb Code     0  d2f.o(x$fpl$d2f)
+    _d2f                                     0x000037d1   Thumb Code    98  d2f.o(x$fpl$d2f)
+    __aeabi_dadd                             0x00003835   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    _dadd                                    0x00003835   Thumb Code   332  daddsub_clz.o(x$fpl$dadd)
+    __aeabi_ddiv                             0x00003985   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x00003985   Thumb Code   560  ddiv.o(x$fpl$ddiv)
+    __aeabi_d2iz                             0x00003c3d   Thumb Code     0  dfix.o(x$fpl$dfix)
+    _dfix                                    0x00003c3d   Thumb Code    94  dfix.o(x$fpl$dfix)
+    __aeabi_i2d                              0x00003c9b   Thumb Code     0  dflt_clz.o(x$fpl$dflt)
+    _dflt                                    0x00003c9b   Thumb Code    46  dflt_clz.o(x$fpl$dflt)
+    __aeabi_ui2d                             0x00003cc9   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
+    _dfltu                                   0x00003cc9   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
+    __aeabi_dmul                             0x00003cf1   Thumb Code     0  dmul.o(x$fpl$dmul)
+    _dmul                                    0x00003cf1   Thumb Code   332  dmul.o(x$fpl$dmul)
+    __fpl_dnaninf                            0x00003e45   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x00003ee1   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    __aeabi_drsub                            0x00003eed   Thumb Code     0  daddsub_clz.o(x$fpl$drsb)
+    _drsb                                    0x00003eed   Thumb Code    22  daddsub_clz.o(x$fpl$drsb)
+    __aeabi_dsub                             0x00003f05   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    _dsub                                    0x00003f05   Thumb Code   472  daddsub_clz.o(x$fpl$dsub)
+    __aeabi_f2d                              0x000040e1   Thumb Code     0  f2d.o(x$fpl$f2d)
+    _f2d                                     0x000040e1   Thumb Code    86  f2d.o(x$fpl$f2d)
+    __fpl_fnaninf                            0x00004137   Thumb Code   140  fnaninf.o(x$fpl$fnaninf)
+    _fp_init                                 0x000041c3   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x000041db   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x000041db   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fpl_fretinf                            0x000041dd   Thumb Code    10  fretinf.o(x$fpl$fretinf)
+    __I$use$fp                               0x000041e6   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x00004538   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00004558   Number         0  anon$$obj.o(Region$$Table)
+    ADDR_1                                   0x20000000   Data           4  algorithm.o(.data.ADDR_1)
+    ADDR_2                                   0x20000004   Data           4  algorithm.o(.data.ADDR_2)
+    ADDR_3                                   0x20000008   Data           4  algorithm.o(.data.ADDR_3)
+    HIGH                                     0x2000000c   Data           4  algorithm.o(.data.HIGH)
+    LOW                                      0x20000010   Data           4  algorithm.o(.data.LOW)
+    cartesian                                0x20000014   Data         504  algorithm.o(.data.cartesian)
+    count_case                               0x2000020c   Data           4  algorithm.o(.data.count_case)
+    result_threshold                         0x20000210   Data           4  algorithm.o(.data.result_threshold)
+    step                                     0x20000214   Data           1  algorithm.o(.data.step)
+    __libspace_start                         0x20000218   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000278   Data           0  libspace.o(.bss)
+    Tempreture                               0x20000280   Data           8  algorithm.o(.bss.Tempreture)
+    adcValue                                 0x20000288   Data           2  algorithm.o(.bss.adcValue)
+    adcValue_th                              0x2000028a   Data           2  algorithm.o(.bss.adcValue_th)
+    angle                                    0x2000028c   Data           4  algorithm.o(.bss.angle)
+    avg_sum                                  0x20000290   Data           4  main.o(.bss.avg_sum)
+    buffer_distance                          0x20000294   Data        4000  algorithm.o(.bss.buffer_distance)
+    button_case                              0x20001234   Data           4  algorithm.o(.bss.button_case)
+    distance                                 0x20001238   Data           4  algorithm.o(.bss.distance)
+    distance_count                           0x2000123c   Data           4  algorithm.o(.bss.distance_count)
+    fallingEdge                              0x20001240   Data           4  algorithm.o(.bss.fallingEdge)
+    last_angle                               0x20001244   Data           4  algorithm.o(.bss.last_angle)
+    pulse_Width_motor                        0x20001248   Data           4  algorithm.o(.bss.pulse_Width_motor)
+    read_button                              0x2000124c   Data           4  algorithm.o(.bss.read_button)
+    result                                   0x20001250   Data           2  algorithm.o(.bss.result)
+    risingEdge                               0x20001254   Data           4  algorithm.o(.bss.risingEdge)
+    run_time                                 0x20001258   Data           4  algorithm.o(.bss.run_time)
+    sensor_count                             0x2000125c   Data           4  algorithm.o(.bss.sensor_count)
+    sensor_sum                               0x20001260   Data           4  main.o(.bss.sensor_sum)
+    stepCount                                0x20001264   Data           4  algorithm.o(.bss.stepCount)
+    temporary                                0x20001268   Data           4  algorithm.o(.bss.temporary)
+    temporary_2                              0x2000126c   Data           4  algorithm.o(.bss.temporary_2)
+    val3                                     0x20001270   Data           1  algorithm.o(.bss.val3)
+    value_1                                  0x20001274   Data           4  algorithm.o(.bss.value_1)
+    value_2                                  0x20001278   Data           4  algorithm.o(.bss.value_2)
+    value_3                                  0x2000127c   Data           4  algorithm.o(.bss.value_3)
+    var1                                     0x20001280   Data           8  algorithm.o(.bss.var1)
+    var2                                     0x20001288   Data           8  algorithm.o(.bss.var2)
+    voltage                                  0x20001290   Data           4  algorithm.o(.bss.voltage)
+    voltage_th                               0x20001294   Data           4  algorithm.o(.bss.voltage_th)
+    x                                        0x20001298   Data           4  algorithm.o(.bss.x)
+    y                                        0x2000129c   Data           4  algorithm.o(.bss.y)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000379
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00004770, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00004588])
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00004558, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x0000026c   Data   RO          200    RESET               startup_tm4c123.o
+    0x0000026c   0x0000026c   0x00000008   Code   RO          225  * !!!main             c_w.l(__main.o)
+    0x00000274   0x00000274   0x0000005c   Code   RO          652    !!!scatter          c_w.l(__scatter.o)
+    0x000002d0   0x000002d0   0x0000005a   Code   RO          650    !!dczerorl2         c_w.l(__dczerorl2.o)
+    0x0000032a   0x0000032a   0x00000002   PAD
+    0x0000032c   0x0000032c   0x00000002   Code   RO          653    !!handler_null      c_w.l(__scatter.o)
+    0x0000032e   0x0000032e   0x00000002   PAD
+    0x00000330   0x00000330   0x0000001c   Code   RO          656    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x0000034c   0x0000034c   0x00000002   Code   RO          504    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x0000034e   0x0000034e   0x00000004   Code   RO          516    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          519    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          521    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          524    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          526    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          528    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          531    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          533    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          535    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          537    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          539    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          541    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          543    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          545    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          547    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          549    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          551    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          555    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          557    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          559    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000000   Code   RO          561    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
+    0x00000352   0x00000352   0x00000002   Code   RO          562    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
+    0x00000354   0x00000354   0x00000002   Code   RO          586    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          601    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          603    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          606    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          609    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          611    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000000   Code   RO          614    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x00000356   0x00000356   0x00000002   Code   RO          615    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x00000358   0x00000358   0x00000000   Code   RO          265    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x00000358   0x00000358   0x00000000   Code   RO          404    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x00000358   0x00000358   0x00000006   Code   RO          416    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x0000035e   0x0000035e   0x00000000   Code   RO          406    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x0000035e   0x0000035e   0x00000004   Code   RO          407    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x00000362   0x00000362   0x00000000   Code   RO          409    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x00000362   0x00000362   0x00000008   Code   RO          410    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0000036a   0x0000036a   0x00000002   Code   RO          507    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x0000036c   0x0000036c   0x00000000   Code   RO          564    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x0000036c   0x0000036c   0x00000004   Code   RO          565    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x00000370   0x00000370   0x00000006   Code   RO          566    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x00000376   0x00000376   0x00000002   PAD
+    0x00000378   0x00000378   0x00000114   Code   RO          201  * .text               startup_tm4c123.o
+    0x0000048c   0x0000048c   0x00000006   Code   RO          223    .text               c_w.l(heapauxi.o)
+    0x00000492   0x00000492   0x00000016   Code   RO          266    .text               c_w.l(_rserrno.o)
+    0x000004a8   0x000004a8   0x00000008   Code   RO          421    .text               c_w.l(rt_errno_addr_intlibspace.o)
+    0x000004b0   0x000004b0   0x00000008   Code   RO          453    .text               c_w.l(libspace.o)
+    0x000004b8   0x000004b8   0x0000004a   Code   RO          456    .text               c_w.l(sys_stackheap_outer.o)
+    0x00000502   0x00000502   0x00000012   Code   RO          497    .text               c_w.l(exit.o)
+    0x00000514   0x00000514   0x0000000c   Code   RO          576    .text               c_w.l(sys_exit.o)
+    0x00000520   0x00000520   0x00000002   Code   RO          591    .text               c_w.l(use_no_semi.o)
+    0x00000522   0x00000522   0x00000000   Code   RO          593    .text               c_w.l(indicate_semi.o)
+    0x00000522   0x00000522   0x00000002   PAD
+    0x00000524   0x00000524   0x0000009e   Code   RO           78    .text.ADC_Init      algorithm.o
+    0x000005c2   0x000005c2   0x00000002   PAD
+    0x000005c4   0x000005c4   0x0000009e   Code   RO           82    .text.ADC_Init_PE4  algorithm.o
+    0x00000662   0x00000662   0x00000002   PAD
+    0x00000664   0x00000664   0x0000004a   Code   RO           80    .text.ADC_Read      algorithm.o
+    0x000006ae   0x000006ae   0x00000002   PAD
+    0x000006b0   0x000006b0   0x0000004a   Code   RO           84    .text.ADC_Read_PE4  algorithm.o
+    0x000006fa   0x000006fa   0x00000002   PAD
+    0x000006fc   0x000006fc   0x000000c0   Code   RO           20    .text.AnalogComparator_Init  algorithm.o
+    0x000007bc   0x000007bc   0x000000e0   Code   RO           36    .text.Button_Init   algorithm.o
+    0x0000089c   0x0000089c   0x00000072   Code   RO           28    .text.COMP0_Handler  algorithm.o
+    0x0000090e   0x0000090e   0x00000002   PAD
+    0x00000910   0x00000910   0x00000012   Code   RO           18    .text.DeepSleep_Init  algorithm.o
+    0x00000922   0x00000922   0x00000002   PAD
+    0x00000924   0x00000924   0x00000416   Code   RO           32    .text.GPIOB_Handler  algorithm.o
+    0x00000d3a   0x00000d3a   0x00000002   PAD
+    0x00000d3c   0x00000d3c   0x00000058   Code   RO           26    .text.GPIOB_Interrupt_Init  algorithm.o
+    0x00000d94   0x00000d94   0x0000003a   Code   RO           38    .text.GPIOF_Handler  algorithm.o
+    0x00000dce   0x00000dce   0x00000002   PAD
+    0x00000dd0   0x00000dd0   0x0000007c   Code   RO           16    .text.GPIO_Init_for_Analog_Comparator  algorithm.o
+    0x00000e4c   0x00000e4c   0x00000004   PAD
+    0x00000e50   0x00000e50   0x00000140   Code   RO           74    .text.GetPixelCoordinates  algorithm.o
+    0x00000f90   0x00000f90   0x0000007a   Code   RO           12    .text.I2C3_Init     algorithm.o
+    0x0000100a   0x0000100a   0x00000002   PAD
+    0x0000100c   0x0000100c   0x0000010e   Code   RO           10    .text.I2C3_Read_Multiple  algorithm.o
+    0x0000111a   0x0000111a   0x00000002   PAD
+    0x0000111c   0x0000111c   0x000000ac   Code   RO            8    .text.I2C3_Write_Multiple  algorithm.o
+    0x000011c8   0x000011c8   0x00000018   Code   RO            6    .text.I2C_busy      algorithm.o
+    0x000011e0   0x000011e0   0x00000068   Code   RO           44    .text.LED_Init      algorithm.o
+    0x00001248   0x00001248   0x0000018c   Code   RO           66    .text.Motor_Handler  algorithm.o
+    0x000013d4   0x000013d4   0x00000030   Code   RO           68    .text.Nokia5110_Clear  algorithm.o
+    0x00001404   0x00001404   0x00000038   Code   RO           72    .text.Nokia5110_DrawFullImage  algorithm.o
+    0x0000143c   0x0000143c   0x00000160   Code   RO           98    .text.Nokia5110_Init  algorithm.o
+    0x0000159c   0x0000159c   0x00000050   Code   RO          102    .text.Nokia5110_OutChar  algorithm.o
+    0x000015ec   0x000015ec   0x00000024   Code   RO           70    .text.Nokia5110_OutString  algorithm.o
+    0x00001610   0x00001610   0x00000314   Code   RO           62    .text.Nokia5110_OutUDec  algorithm.o
+    0x00001924   0x00001924   0x0000004c   Code   RO           60    .text.Nokia5110_SetCursor  algorithm.o
+    0x00001970   0x00001970   0x00000058   Code   RO           76    .text.Nokia5110_SetPxl  algorithm.o
+    0x000019c8   0x000019c8   0x00000078   Code   RO           48    .text.PortC_Init    algorithm.o
+    0x00001a40   0x00001a40   0x00000072   Code   RO           88    .text.PortE_Init    algorithm.o
+    0x00001ab2   0x00001ab2   0x00000006   PAD
+    0x00001ab8   0x00001ab8   0x00000218   Code   RO           14    .text.Read_IC       algorithm.o
+    0x00001cd0   0x00001cd0   0x000000b6   Code   RO           46    .text.Set_LED_Color  algorithm.o
+    0x00001d86   0x00001d86   0x00000002   PAD
+    0x00001d88   0x00001d88   0x00000012   Code   RO           30    .text.Set_PC2_High  algorithm.o
+    0x00001d9a   0x00001d9a   0x00000002   PAD
+    0x00001d9c   0x00001d9c   0x00000012   Code   RO           40    .text.Set_PC2_Low   algorithm.o
+    0x00001dae   0x00001dae   0x00000002   PAD
+    0x00001db0   0x00001db0   0x00000324   Code   RO           52    .text.SysTick_Handler  algorithm.o
+    0x000020d4   0x000020d4   0x00000094   Code   RO           50    .text.SysTick_Init  algorithm.o
+    0x00002168   0x00002168   0x00000012   Code   RO          210    .text.SystemInit    system_tm4c123.o
+    0x0000217a   0x0000217a   0x00000002   PAD
+    0x0000217c   0x0000217c   0x000000d8   Code   RO           96    .text.TIMER2A_Handler  algorithm.o
+    0x00002254   0x00002254   0x000000e6   Code   RO            4    .text.TIMER2B_Handler  algorithm.o
+    0x0000233a   0x0000233a   0x00000002   PAD
+    0x0000233c   0x0000233c   0x000000e8   Code   RO           92    .text.TIMER2_Init   algorithm.o
+    0x00002424   0x00002424   0x00000038   Code   RO           90    .text.TRIG_Init     algorithm.o
+    0x0000245c   0x0000245c   0x00000022   Code   RO           42    .text.Turn_Off      algorithm.o
+    0x0000247e   0x0000247e   0x00000002   PAD
+    0x00002480   0x00002480   0x00000030   Code   RO           22    .text.__NVIC_EnableIRQ  algorithm.o
+    0x000024b0   0x000024b0   0x00000042   Code   RO           24    .text.__NVIC_SetPriority  algorithm.o
+    0x000024f2   0x000024f2   0x00000006   PAD
+    0x000024f8   0x000024f8   0x000000fc   Code   RO           58    .text.alg_motor_sensor  algorithm.o
+    0x000025f4   0x000025f4   0x00000048   Code   RO           56    .text.calculate_threshold_PE4  algorithm.o
+    0x0000263c   0x0000263c   0x0000004e   Code   RO           34    .text.delay_ms      algorithm.o
+    0x0000268a   0x0000268a   0x00000002   PAD
+    0x0000268c   0x0000268c   0x0000003a   Code   RO          104    .text.lcddatawrite  algorithm.o
+    0x000026c6   0x000026c6   0x00000002   PAD
+    0x000026c8   0x000026c8   0x00000090   Code   RO          100    .text.lcdwrite      algorithm.o
+    0x00002758   0x00002758   0x00000270   Code   RO          171    .text.main          main.o
+    0x000029c8   0x000029c8   0x00000104   Code   RO            2    .text.pulse_init    algorithm.o
+    0x00002acc   0x00002acc   0x00000044   Code   RO           94    .text.send_trigger_pulse  algorithm.o
+    0x00002b10   0x00002b10   0x0000007c   Code   RO           64    .text.setStep       algorithm.o
+    0x00002b8c   0x00002b8c   0x00000048   Code   RO           54    .text.take_ADC_value  algorithm.o
+    0x00002bd4   0x00002bd4   0x00000030   Code   RO          449    i.__ARM_fpclassify  m_wm.l(fpclassify.o)
+    0x00002c04   0x00002c04   0x00000004   PAD
+    0x00002c08   0x00002c08   0x000000c8   Code   RO          253    i.__hardfp_cos      m_wm.l(cos.o)
+    0x00002cd0   0x00002cd0   0x000000c8   Code   RO          259    i.__hardfp_sin      m_wm.l(sin.o)
+    0x00002d98   0x00002d98   0x00000438   Code   RO          395    i.__ieee754_rem_pio2  m_wm.l(rred.o)
+    0x000031d0   0x000031d0   0x00000170   Code   RO          378    i.__kernel_cos      m_wm.l(cos_i.o)
+    0x00003340   0x00003340   0x000000f8   Code   RO          451    i.__kernel_poly     m_wm.l(poly.o)
+    0x00003438   0x00003438   0x00000130   Code   RO          400    i.__kernel_sin      m_wm.l(sin_i.o)
+    0x00003568   0x00003568   0x00000014   Code   RO          382    i.__mathlib_dbl_infnan  m_wm.l(dunder.o)
+    0x0000357c   0x0000357c   0x00000004   PAD
+    0x00003580   0x00003580   0x00000020   Code   RO          384    i.__mathlib_dbl_invalid  m_wm.l(dunder.o)
+    0x000035a0   0x000035a0   0x00000020   Code   RO          387    i.__mathlib_dbl_underflow  m_wm.l(dunder.o)
+    0x000035c0   0x000035c0   0x00000018   Code   RO          445    i.fabs              m_wm.l(fabs.o)
+    0x000035d8   0x000035d8   0x00000088   Code   RO          192    main_area           gpio_b_initialize.o
+    0x00003660   0x00003660   0x00000158   Code   RO          195    main_area           keypad.o
+    0x000037b8   0x000037b8   0x00000018   Code   RO          359    x$fpl$basic         fz_wm.l(basic.o)
+    0x000037d0   0x000037d0   0x00000062   Code   RO          227    x$fpl$d2f           fz_wm.l(d2f.o)
+    0x00003832   0x00003832   0x00000002   PAD
+    0x00003834   0x00003834   0x00000150   Code   RO          229    x$fpl$dadd          fz_wm.l(daddsub_clz.o)
+    0x00003984   0x00003984   0x000002b8   Code   RO          236    x$fpl$ddiv          fz_wm.l(ddiv.o)
+    0x00003c3c   0x00003c3c   0x0000005e   Code   RO          239    x$fpl$dfix          fz_wm.l(dfix.o)
+    0x00003c9a   0x00003c9a   0x0000002e   Code   RO          244    x$fpl$dflt          fz_wm.l(dflt_clz.o)
+    0x00003cc8   0x00003cc8   0x00000026   Code   RO          243    x$fpl$dfltu         fz_wm.l(dflt_clz.o)
+    0x00003cee   0x00003cee   0x00000002   PAD
+    0x00003cf0   0x00003cf0   0x00000154   Code   RO          249    x$fpl$dmul          fz_wm.l(dmul.o)
+    0x00003e44   0x00003e44   0x0000009c   Code   RO          361    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
+    0x00003ee0   0x00003ee0   0x0000000c   Code   RO          363    x$fpl$dretinf       fz_wm.l(dretinf.o)
+    0x00003eec   0x00003eec   0x00000016   Code   RO          230    x$fpl$drsb          fz_wm.l(daddsub_clz.o)
+    0x00003f02   0x00003f02   0x00000002   PAD
+    0x00003f04   0x00003f04   0x000001dc   Code   RO          231    x$fpl$dsub          fz_wm.l(daddsub_clz.o)
+    0x000040e0   0x000040e0   0x00000056   Code   RO          251    x$fpl$f2d           fz_wm.l(f2d.o)
+    0x00004136   0x00004136   0x0000008c   Code   RO          365    x$fpl$fnaninf       fz_wm.l(fnaninf.o)
+    0x000041c2   0x000041c2   0x0000001a   Code   RO          574    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x000041dc   0x000041dc   0x0000000a   Code   RO          367    x$fpl$fretinf       fz_wm.l(fretinf.o)
+    0x000041e6   0x000041e6   0x00000000   Code   RO          377    x$fpl$usenofp       fz_wm.l(usenofp.o)
+    0x000041e6   0x000041e6   0x00000002   PAD
+    0x000041e8   0x000041e8   0x00000030   Data   RO          379    .constdata          m_wm.l(cos_i.o)
+    0x00004218   0x00004218   0x000000cc   Data   RO          397    .constdata          m_wm.l(rred.o)
+    0x000042e4   0x000042e4   0x00000004   PAD
+    0x000042e8   0x000042e8   0x00000028   Data   RO          401    .constdata          m_wm.l(sin_i.o)
+    0x00004310   0x00004310   0x000001e0   Data   RO          158    .rodata.ASCII       algorithm.o
+    0x000044f0   0x000044f0   0x00000045   Data   RO          149    .rodata.str1.1      algorithm.o
+    0x00004535   0x00004535   0x00000003   PAD
+    0x00004538   0x00004538   0x00000020   Data   RO          649    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00004558, Size: 0x00000218, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00000030])
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   COMPRESSED   0x00000004   Data   RW          132    .data.ADDR_1        algorithm.o
+    0x20000004   COMPRESSED   0x00000004   Data   RW          133    .data.ADDR_2        algorithm.o
+    0x20000008   COMPRESSED   0x00000004   Data   RW          134    .data.ADDR_3        algorithm.o
+    0x2000000c   COMPRESSED   0x00000004   Data   RW          121    .data.HIGH          algorithm.o
+    0x20000010   COMPRESSED   0x00000004   Data   RW          120    .data.LOW           algorithm.o
+    0x20000014   COMPRESSED   0x000001f8   Data   RW          114    .data.cartesian     algorithm.o
+    0x2000020c   COMPRESSED   0x00000004   Data   RW          124    .data.count_case    algorithm.o
+    0x20000210   COMPRESSED   0x00000004   Data   RW          131    .data.result_threshold  algorithm.o
+    0x20000214   COMPRESSED   0x00000001   Data   RW          125    .data.step          algorithm.o
+
+
+    Execution Region ER_ZI (Exec base: 0x20000218, Load base: 0x00004588, Size: 0x00001288, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000218        -       0x00000060   Zero   RW          454    .bss                c_w.l(libspace.o)
+    0x20000278        -       0x00000004   Zero   RW          138    .bss.TIMER2B_Handler.state  algorithm.o
+    0x2000027c   0x00004588   0x00000004   PAD
+    0x20000280        -       0x00000008   Zero   RW          145    .bss.Tempreture     algorithm.o
+    0x20000288        -       0x00000002   Zero   RW          153    .bss.adcValue       algorithm.o
+    0x2000028a        -       0x00000002   Zero   RW          155    .bss.adcValue_th    algorithm.o
+    0x2000028c        -       0x00000004   Zero   RW          130    .bss.angle          algorithm.o
+    0x20000290        -       0x00000004   Zero   RW          175    .bss.avg_sum        main.o
+    0x20000294        -       0x00000fa0   Zero   RW          157    .bss.buffer_distance  algorithm.o
+    0x20001234        -       0x00000004   Zero   RW          119    .bss.button_case    algorithm.o
+    0x20001238        -       0x00000004   Zero   RW          129    .bss.distance       algorithm.o
+    0x2000123c        -       0x00000004   Zero   RW          116    .bss.distance_count  algorithm.o
+    0x20001240        -       0x00000004   Zero   RW          127    .bss.fallingEdge    algorithm.o
+    0x20001244        -       0x00000004   Zero   RW          117    .bss.last_angle     algorithm.o
+    0x20001248        -       0x00000004   Zero   RW          128    .bss.pulse_Width_motor  algorithm.o
+    0x2000124c        -       0x00000004   Zero   RW          122    .bss.read_button    algorithm.o
+    0x20001250        -       0x00000002   Zero   RW          152    .bss.result         algorithm.o
+    0x20001252   0x00004588   0x00000002   PAD
+    0x20001254        -       0x00000004   Zero   RW          126    .bss.risingEdge     algorithm.o
+    0x20001258        -       0x00000004   Zero   RW          139    .bss.run_time       algorithm.o
+    0x2000125c        -       0x00000004   Zero   RW          115    .bss.sensor_count   algorithm.o
+    0x20001260        -       0x00000004   Zero   RW          173    .bss.sensor_sum     main.o
+    0x20001264        -       0x00000004   Zero   RW          118    .bss.stepCount      algorithm.o
+    0x20001268        -       0x00000004   Zero   RW          144    .bss.temporary      algorithm.o
+    0x2000126c        -       0x00000004   Zero   RW          140    .bss.temporary_2    algorithm.o
+    0x20001270        -       0x00000001   Zero   RW          141    .bss.val3           algorithm.o
+    0x20001271   0x00004588   0x00000003   PAD
+    0x20001274        -       0x00000004   Zero   RW          146    .bss.value_1        algorithm.o
+    0x20001278        -       0x00000004   Zero   RW          147    .bss.value_2        algorithm.o
+    0x2000127c        -       0x00000004   Zero   RW          148    .bss.value_3        algorithm.o
+    0x20001280        -       0x00000008   Zero   RW          142    .bss.var1           algorithm.o
+    0x20001288        -       0x00000008   Zero   RW          143    .bss.var2           algorithm.o
+    0x20001290        -       0x00000004   Zero   RW          154    .bss.voltage        algorithm.o
+    0x20001294        -       0x00000004   Zero   RW          156    .bss.voltage_th     algorithm.o
+    0x20001298        -       0x00000004   Zero   RW          150    .bss.x              algorithm.o
+    0x2000129c        -       0x00000004   Zero   RW          151    .bss.y              algorithm.o
+    0x200012a0        -       0x00000000   Zero   RW          199    HEAP                startup_tm4c123.o
+    0x200012a0        -       0x00000200   Zero   RW          198    STACK               startup_tm4c123.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      9210        168        549        533       4119      24315   algorithm.o
+       136         42          0          0          0        264   gpio_b_initialize.o
+       344         16          0          0          0        324   keypad.o
+       624         38          0          0          8       1994   main.o
+         0          0          0          0          0         32   outstr.o
+       276         24        620          0        512       5440   startup_tm4c123.o
+        18          0          0          0          0       6703   system_tm4c123.o
+
+    ----------------------------------------------------------------------
+     10660        288       1204        536       4648      39072   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        52          0          3          3          9          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        90          0          0          0          0          0   __dczerorl2.o
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        94          8          0          0          0          0   __scatter.o
+        28          0          0          0          0          0   __scatter_zi.o
+        22          0          0          0          0        100   _rserrno.o
+        18          0          0          0          0         80   exit.o
+         6          0          0          0          0        152   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         6          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+         8          4          0          0          0         68   rt_errno_addr_intlibspace.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+        74          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+        24          0          0          0          0        164   basic.o
+        98          4          0          0          0        140   d2f.o
+       834         16          0          0          0        516   daddsub_clz.o
+       696        140          0          0          0        264   ddiv.o
+        94          4          0          0          0        140   dfix.o
+        84          0          0          0          0        232   dflt_clz.o
+       340         12          0          0          0        152   dmul.o
+       156          4          0          0          0        140   dnaninf.o
+        12          0          0          0          0        116   dretinf.o
+        86          4          0          0          0        132   f2d.o
+       140          4          0          0          0        132   fnaninf.o
+        26          0          0          0          0        116   fpinit.o
+        10          0          0          0          0        116   fretinf.o
+         0          0          0          0          0          0   usenofp.o
+       200         20          0          0          0        164   cos.o
+       368         46         48          0          0        200   cos_i.o
+        84         16          0          0          0        372   dunder.o
+        24          0          0          0          0        124   fabs.o
+        48          0          0          0          0        124   fpclassify.o
+       248          0          0          0          0        152   poly.o
+      1080        142        204          0          0        188   rred.o
+       200         20          0          0          0        164   sin.o
+       304         24         40          0          0        208   sin_i.o
+
+    ----------------------------------------------------------------------
+      5592        476        296          0         96       4808   Library Totals
+        24          0          4          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       412         20          0          0         96        752   c_w.l
+      2600        188          0          0          0       2360   fz_wm.l
+      2556        268        292          0          0       1696   m_wm.l
+
+    ----------------------------------------------------------------------
+      5592        476        296          0         96       4808   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     16252        764       1500        536       4744      41148   Grand Totals
+     16252        764       1500         48       4744      41148   ELF Image Totals (compressed)
+     16252        764       1500         48          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                17752 (  17.34kB)
+    Total RW  Size (RW Data + ZI Data)              5280 (   5.16kB)
+    Total ROM Size (Code + RO Data + RW Data)      17800 (  17.38kB)
+
+==============================================================================
+
